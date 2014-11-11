@@ -2,7 +2,7 @@
 ***
 
 ### <span style="color:blue">Welcome to your official AQM homepage!<span>
-(_redirect back to [Dustin's page](http://dustin21.github.io/)_)
+(_redirect back to [homepage](http://dustin21.github.io/)_)
 ![AQM](AQM_logo.jpg)
 
 ***
