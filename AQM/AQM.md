@@ -5,7 +5,7 @@
 (_redirect back to [Dustin's page](http://dustin21.github.io/)_)
 ![AQM](AQM_logo.jpg)
 
-
+***
 
 Here you will be able to find the workshop resources, including:
 
@@ -21,7 +21,7 @@ Let the fun begin!
 ***
 
 
-### Week #1
+### Week #1 - The Awakening
 
 Get your software set up:
 
