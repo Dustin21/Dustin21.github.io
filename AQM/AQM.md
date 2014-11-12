@@ -1,11 +1,13 @@
 # Applied Quantitative Methods - Workshop Series
-***
+___
 
-### <span style="color:blue">Welcome to your official AQM homepage!<span>
-(_redirect back to [homepage](http://dustin21.github.io/)_)
 ![AQM](AQM_logo.jpg)
 
-***
+___
+
+### <span style="color:#0066CC">Welcome to your official AQM homepage!<span>
+(_redirect back to [homepage](http://dustin21.github.io/)_)
+
 
 Here you will be able to find the workshop resources, including:
 
@@ -15,6 +17,8 @@ Here you will be able to find the workshop resources, including:
 * Important links
 
 Please save this page in your bookmarks, as you will be returning to it quite often.
+
+Email: [aqmworkshop@gmail.com](aqmworkshop@gmail.com)
 
 Let the fun begin!
 
