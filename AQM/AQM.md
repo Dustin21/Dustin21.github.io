@@ -27,6 +27,10 @@ Let the fun begin!
 
 ### Week #1 - The Awakening
 
+**Part 1** - 
+Please download the in-class [activity sheet](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/activity_sheet.pdf?raw=true).
+
+**Part 2** - 
 Get your software set up:
 
 1. [Install R](http://cran.stat.sfu.ca/)
@@ -48,7 +52,7 @@ Here you will upload a personal `README.md` file to your repository telling us a
 4. Bullet points/numbering
 5. An image of your choice
 
-Spice your page up and experiment, as everyone will be viewing it at one point. Here are some [hints](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Use the forum [Stack Overflow](http://stackoverflow.com/) to get some ideas or to answer any questions you may have. There are some good resources on the forum, and if you have a question, chances are it has already been answered. I still tend to rely on [Google](google.ca) when I'm stuck. Next week, some of you will be selected to present your progress and how you handled *The Markdown Challenge*.
+Spice your page up and experiment, as everyone will be viewing it at one point. Here are some [hints](http://assemble.io/docs/Cheatsheet-Markdown.html). Use the forum [Stack Overflow](http://stackoverflow.com/) to get some ideas or to answer any questions you may have. There are some good resources on the forum, and if you have a question, chances are it has already been answered. I still tend to rely on [Google](google.ca) when I'm stuck. Next week, some of you will be selected to present your progress and how you handled *The Markdown Challenge*.
 
 
 If you are anything like this:
