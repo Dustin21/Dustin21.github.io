@@ -49,7 +49,8 @@ Here you will upload a personal `README.md` file to your repository telling us a
 4. Bullet points/numbering
 5. An image of your choice
 
-Spice your page up and experiment, as everyone will be viewing it at one point. Use the forum [Stack Overflow](http://stackoverflow.com/) to get some ideas or to answer any questions you may have. There are some good resources on the forum, and if you have a question, chances are it has already been answered. I still tend to rely on [Google](google.ca) when I'm stuck. Next week, some of you will be selected to present your progress and how you handled *The Markdown Challenge*.
+Spice your page up and experiment, as everyone will be viewing it at one point. Here are some [hints](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Use the forum [Stack Overflow](http://stackoverflow.com/) to get some ideas or to answer any questions you may have. There are some good resources on the forum, and if you have a question, chances are it has already been answered. I still tend to rely on [Google](google.ca) when I'm stuck. Next week, some of you will be selected to present your progress and how you handled *The Markdown Challenge*.
+
 
 If you are anything like this:
 ![omg](http://cdn.ebaumsworld.com/thumbs/2013/04/21/033626/83239236/smallreactio.jpg)
