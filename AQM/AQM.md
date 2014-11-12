@@ -1,4 +1,4 @@
-# Aplied Quantitative Methods - Workshop Series
+# Applied Quantitative Methods - Workshop Series
 ***
 
 ### <span style="color:blue">Welcome to your official AQM homepage!<span>
