@@ -36,6 +36,8 @@ Let the fun begin!
 Please download the in-class [activity sheet](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/activity_sheet.pdf?raw=true).
 
 **Part 2** - 
+Follow along with these [slides](Slides/slides01_Intro.html).
+
 Get your software set up:
 
 1. [Install R](http://cran.stat.sfu.ca/)
