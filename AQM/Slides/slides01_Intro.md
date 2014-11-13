@@ -19,7 +19,7 @@ R is the fundamental programming language. It is free source, making it open to 
 What is Cran?
 ========================================================
 
-Cran is the R's mother - it supplies R with a gigantic repository of all fully-functioning packages that R can use.
+Cran is the god of R - it supplies R with a gigantic repository of all fully-functioning packages that R can use.
 
 You don't download Cran, but anytime you use the command line to install a package from the internet using `install.packages()`, you can believe it is coming from Cran.
 
