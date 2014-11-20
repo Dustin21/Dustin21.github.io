@@ -65,3 +65,24 @@ Spice your page up and experiment, as everyone will be viewing it at one point. 
 If you are anything like this:
 ![omg](http://cdn.ebaumsworld.com/thumbs/2013/04/21/033626/83239236/smallreactio.jpg)
 ask your fellow team members for assistance!
+
+
+### Week #2 - Harder Better Faster Stronger
+
+**Part 1**
+You filled in a review sheet from last week, so let's go over it. Then we can get tapped into our AQM repository and play a game using _push_ and _pull_.
+
+**Part 2**
+It is time for R! We will be doing some programming basics. Get ready for the ride. The following links will help you work through the fundamentals and provide some material to work with:
+
+1. [Swirl](http://swirlstats.com/): R tutorials **in R**. Learn by doing!
+2. [Intro to R](http://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf): Takes you through the basics and really gets you familiar with R.
+3. [Graphical Parameters for plots](http://www.statmethods.net/advgraphs/parameters.html)
+4. [Various R data sets](http://vincentarelbundock.github.io/Rdatasets/datasets.html): Examine the ones you like.
+5. [Example of data Extraction](http://www.r-tutor.com/r-introduction/data-frame/data-frame-row-slice)
+6. [The Fill R intro](http://cran.r-project.org/doc/manuals/r-release/R-intro.html): Use this for reference of further investigation.
+
+#### Assignment 2 - Pending
+
+
+
