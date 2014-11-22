@@ -3,7 +3,9 @@ title: "R Script Challenge"
 author: "Dustin Johnson"
 css: sky.css
 date: "November 21, 2014"
-output: html_document
+output: 
+  html_document:
+    toc: true
 ---
 ***
 
