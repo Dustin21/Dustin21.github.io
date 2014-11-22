@@ -61,10 +61,12 @@ If you are anything like this:
 ![omg](http://cdn.ebaumsworld.com/thumbs/2013/04/21/033626/83239236/smallreactio.jpg)
 ask your fellow team members for assistance!
 
+***
+***
 
 ### Week #2 - Harder Better Faster Stronger
 
-Here are the week 2 [slides](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week2/week2_slides.html)
+Here are the week 2 [slides](http://htmlpreview.github.io/?https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week2/week2_slides.html#/)
 
 **Part 1**
 You filled in a review sheet from last week, so let's go over it. Then we can get tapped into our AQM repository and play a game using _push_ and _pull_.
@@ -80,7 +82,7 @@ It is time for R! We will be doing some programming basics. Get ready for the ri
 6. [The Fill R intro](http://cran.r-project.org/doc/manuals/r-release/R-intro.html): Use this for reference of further investigation.
 
 #### Assignment 2 - R Script Challenge
-Here is your awaited challenge for next week: [R Script Challenge](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week2/Rscript_Challenge.html). 
+Here is your awaited challenge for next week: [R Script Challenge](http://htmlpreview.github.io/?https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week2/Rscript_Challenge.html). 
 
 All details and pointers are provided on the assignment. If you need to have any questions, feel free to email/facebook us using the contact info at the top of the page.
 
