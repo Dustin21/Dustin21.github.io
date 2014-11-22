@@ -79,7 +79,7 @@ It is time for R! We will be doing some programming basics. Get ready for the ri
 3. [Graphical Parameters for plots](http://www.statmethods.net/advgraphs/parameters.html)
 4. [Various R data sets](http://vincentarelbundock.github.io/Rdatasets/datasets.html): Examine the ones you like.
 5. [Example of data Extraction](http://www.r-tutor.com/r-introduction/data-frame/data-frame-row-slice)
-6. [The Fill R intro](http://cran.r-project.org/doc/manuals/r-release/R-intro.html): Use this for reference of further investigation.
+6. [The Full R intro](http://cran.r-project.org/doc/manuals/r-release/R-intro.html): Use this for reference of further investigation.
 
 #### Assignment 2 - R Script Challenge
 Here is your awaited challenge for next week: [R Script Challenge](http://htmlpreview.github.io/?https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week2/Rscript_Challenge.html). 

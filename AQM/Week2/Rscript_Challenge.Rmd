@@ -5,8 +5,9 @@ css: sky.css
 date: "November 21, 2014"
 output: html_document
 ---
+***
 
-Here are the steps to submit your assignment:
+**Here are the steps to submit your assignment:**
 
 1. Open the existing R project that is connected with your personal Github repo located on the team AQM_Workshop. It should be named `first_last_AQM`. We already created this project in class!
 2. Make a new folder within this project and name it `assignment01_First-Code`.
@@ -19,7 +20,7 @@ Here are the steps to submit your assignment:
 	* `.html`: HTML file	
 6. `Pull`, `Commit`, `Push` your finished assignment with all accompanying files to your `first_last_AQM` repo and double-check everything made it there, so we can all view it, and reproduce your results.
 
-> Please answer all questions in a clean Markdown format, and post your final solutions by **Tuesday November 25th**. If you get stuck, try asking your teammates or get some hints from your fellow team member's repos. All extra functions you decide to add must be explained to the rest of the team.
+> Please answer all questions in a clean Markdown format, and post your final solutions by **Tuesday November 25th**. If you get stuck, try asking your teammates or get some hints from your fellow team member's repos. All extra functions you decide to add must be explained in your Markdown file, so your team members will understand.
 
 ***
 ### Part 1
@@ -114,6 +115,10 @@ pairs(mat)
 ***
 
 Build your own function using random objects (random variables) as above and examine it using the functions you have already learned. As we have seen, `pairs()` lets us better examine data with multi-variables, so don't be afraid to add more. If this section scares you, just experiment with the example in **Part 2**: add more/less samples, make `rnorm()` into `runif()`, or change the values of the coefficients and see what kind of results you get. Don't forget to show your code and explain your process to the rest of your team.
+
+
+
+
 
 
 
