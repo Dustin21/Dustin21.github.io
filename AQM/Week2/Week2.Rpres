@@ -1,0 +1,288 @@
+AQM Workshop #2
+========================================================
+author: Dustin Johnson
+
+Object-oriented programming (OOP)
+========================================================
+
+All R statements where you create objects – “assignments” – have this form:
+
+
+`objectName <- value`
+
+
+* You provide your **object** with _information_ or "functions" (numbers, characters, giant matrices, etc.) using the operator "`<-`". We call the process "assignment". Why not "`=`"?
+
+* We can use a shortcut! ... just press `"alt" "-"`.
+
+Example
+========================================================
+
+x <- 5
+
+y <- sin(5 - pi/2)
+
+z <- seq(from = 1, to = 100, by = 1)
+
+This_is_cool <- "Hello"
+
+Can_I_do_this <- c("I", "guess")
+
+and_this <- no_way
+
+OMG_boring <- matrix(0, nrow = 10, ncol = 10)
+
+
+R already knows some functions
+========================================================
+
+```{r}
+date()
+```
+
+* check `ls()` and `objects()`
+
+* Or remove an object: `rm(x)`
+
+* Or everything: `rm(list = ls())`
+
+Having fun
+========================================================
+
+```{r}
+cool <- rnorm(100, mean = 20, sd = 5)
+plot(cool)
+```
+
+cool_plot <- plot(cool) ...? why can't we make it an object? Try it!
+
+`rnorm()`
+========================================================
+
+`rnorm()` is a built in function.
+
+**ALWAYS LOOK AT THE FUNCTION**
+
+```{r, eval=FALSE}
+?rnorm
+```
+
+It is important to know what it does before you start using it. Sometimes, you need help on a function, so you can consider this the help page, or user manual.
+
+
+Having fun
+========================================================
+
+```{r}
+a <- 2
+b <- -3
+sig_sq <- 0.5
+x <- runif(40)
+y <- a + b * x + rnorm(40, sd = sqrt(sig_sq))
+(avg_x <- mean(x))
+```
+
+
+Always comment your code!
+========================================================
+
+```{r}
+# construct constants
+a <- 2
+b <- -3
+sig_sq <- 0.5
+
+# draw 40 uniformly random numbers
+x <- runif(40)
+
+# Build a function
+y <- a + b * x + rnorm(40, sd = sqrt(sig_sq))
+
+# Average of our uniformly random variable (x)
+(avg_x <- mean(x))
+```
+
+
+Having fun
+========================================================
+
+```{r}
+plot(x, y)
+abline(a, b, col = "magenta", lwd = 5)
+```
+
+Make your own fun object
+========================================================
+
+Try to make your own assignment.
+
+1. Specify your object name.
+2. Provide it with the info you wish to hold on to (`<-`)
+3. Test it out
+
+Working Directory
+========================================================
+
+This is where R will load or save your files by default.
+
+Here's mine:
+```{r}
+getwd()
+```
+
+But if you don't like the default, you can change it:
+```{r,eval=FALSE}
+setwd("~/yourProject")
+```
+
+Working Directory
+========================================================
+
+Sometimes we need packages (functions, data, etc.) that R just doesn't have on hand. We install from CRAN!
+
+We use:
+```{r, eval=FALSE}
+install.packages("package_name")
+```
+Try loading the package 'swirl'.
+
+Now we must tell R to use it, so call it from our package library:
+
+```{r, eval = FALSE}
+library("package_name")
+```
+
+Swirl is your friend. Use it as a guide through regression and data cleaning to a biostat bootcamp!
+
+RStudio Projects
+========================================================
+Keeping all the files associated with a project organized together!
+
+When you are loaded in a project, your working directory revolves around it.
+
+Check it yourself!
+
+Vectors vs Lists
+========================================================
+
+What is a vector?
+
+What is a list?
+
+Make one of each.
+
+
+Matrices vs data.frames
+========================================================
+
+Matrix:
+```{r, eval=FALSE}
+matrix(c(1,2,3,4), nrow = 2, ncol = 2)
+matrix(c(1,2,3,4), nrow = 2, ncol = 2, byrow = TRUE)
+```
+
+Data.frame:
+```{r}
+n = c(2, 3, 5) 
+s = c("aa", "bb", "cc") 
+b = c(TRUE, FALSE, TRUE) 
+df = data.frame(n, s, b)
+```
+
+Difference?
+
+
+Data
+========================================================
+
+```{r, eval=FALSE}
+# load a the R's data package
+library(MASS)
+
+# Assign the data to an object
+long.dat <- longley
+
+# Examine the data
+class(long.dat)
+dim(long.dat)
+names(long.dat)
+str(long.dat)
+head(long.dat)
+```
+
+Data cont.
+========================================================
+If its too long, things go wrong!
+```{r}
+library(MASS)
+long.dat <- longley
+long.dat
+```
+
+Subsetting and pulling apart data
+========================================================
+```{r,eval=FALSE}
+long.dat[,1]
+long.dat[1,]
+long.dat[1,1]
+long.dat$Employed
+long.dat$Employed[,1] # Why doesn't this work?
+long.dat$Employed[1]
+```
+
+
+Visualise
+========================================================
+Show me the interaction of two variables in a plot.
+
+Plot is a function... `?plot`, it will explain.
+
+
+
+Let's work through an example
+========================================================
+```{r, eval=FALSE}
+plot(long.dat$Year, long.dat$Employed)
+```
+
+I'd rather have better names:
+```{r, eval=FALSE}
+plot(long.dat$Year, long.dat$Employed, xlab = "Year", ylab = "Employed", main = "Employment from 1947 to 1962")
+```
+
+
+========================================================
+```{r,echo=FALSE}
+plot(long.dat$Year, long.dat$Employed, xlab = "Year", ylab = "Employed", 
+		 main = "Employment from 1947 to 1962", col = "blue", pch = 16)
+```
+
+What the future holds
+========================================================
+```{r, echo =FALSE}
+library(ggplot2)
+gDat <- read.delim("http://tiny.cc/gapminder");
+jDat <- droplevels(subset(gDat, continent != "Oceania"))
+jYear <- 2007
+
+q <- ggplot(subset(jDat, year == jYear), aes(x = gdpPercap, y = lifeExp)) + 
+	scale_x_log10(limits = c(230, 63000))
+r <- q + geom_point(aes(size = sqrt(pop/pi)), pch = 21, show_guide = FALSE) + 
+	scale_size_continuous(range=c(1,40))
+
+gdURL <- "http://www.stat.ubc.ca/~jenny/notOcto/STAT545A/examples/gapminder/data/gapminderCountryColors.txt"
+countryColors <- read.delim(file = gdURL, as.is = 3)
+
+jColors <- countryColors$color
+names(jColors) <- countryColors$country
+
+jDat <- jDat[with(jDat, order(year, -1 * pop)), ]
+ggplot(subset(jDat, year == jYear),
+       aes(x = gdpPercap, y = lifeExp)) +
+  scale_x_log10(limits = c(230, 63000)) +
+  geom_point(aes(size = sqrt(pop/pi)), pch = 21, show_guide = FALSE) +
+  scale_size_continuous(range=c(1,40)) + ylim(c(39, 87)) +
+  facet_wrap(~ continent) +
+  aes(fill = country) + scale_fill_manual(values = jColors)
+
+```
