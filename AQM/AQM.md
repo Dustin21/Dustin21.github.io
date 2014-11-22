@@ -64,6 +64,8 @@ ask your fellow team members for assistance!
 
 ### Week #2 - Harder Better Faster Stronger
 
+Here are the week 2 [slides](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week2/Week2.html)
+
 **Part 1**
 You filled in a review sheet from last week, so let's go over it. Then we can get tapped into our AQM repository and play a game using _push_ and _pull_.
 
@@ -77,7 +79,12 @@ It is time for R! We will be doing some programming basics. Get ready for the ri
 5. [Example of data Extraction](http://www.r-tutor.com/r-introduction/data-frame/data-frame-row-slice)
 6. [The Fill R intro](http://cran.r-project.org/doc/manuals/r-release/R-intro.html): Use this for reference of further investigation.
 
-#### Assignment 2 - Pending
+#### Assignment 2 - R Script Challenge
+Here is your awaited challenge for next week: [R Script Challenge](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week2/Rscript_Challenge.html). 
+
+All details and pointers are provided on the assignment. If you need to have any questions, feel free to email/facebook us using the contact info at the top of the page.
+
+Best of luck!
 
 
 
