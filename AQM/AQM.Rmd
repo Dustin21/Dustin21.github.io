@@ -69,7 +69,7 @@ ask your fellow team members for assistance!
 
 ### Week #2 - Harder Better Faster Stronger
 
-Here are the week 2 [slides](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week2/Week2.html)
+Here are the week 2 [slides](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week2/week2_slides.html)
 
 **Part 1**
 You filled in a review sheet from last week, so let's go over it. Then we can get tapped into our AQM repository and play a game using _push_ and _pull_.
