@@ -14,7 +14,7 @@ output:
 1. Open the existing R project that is connected with your personal Github repo located on the team AQM_Workshop. It should be named `first_last_AQM`. We already created this project in class!
 2. Make a new folder within this project and name it `assignment01_First-Code`.
 3. Create a new R script, where you will do all your coding for this assignment, and save all your work within the folder above.
-4. When your code looks organised and reproduces your answers and output, each chunk will be placed into a Markdown file, where you will answer all your questions and explain all your code. Just follow how I constructed this assignment, and explain each chunk of code as you go along.
+4. When your code looks organised and reproduces your answers and output, each chunk will be placed into a Markdown file, where you will answer all your questions and explain all your code. Just follow how I constructed this assignment, and explain each chunk of code as you go along. [EXAMPLE HERE](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week2/MarkdownExample.png).
 5. Once finished, you will have the following files in the folder within your project:
 	* `.R`: Your R source file
 	* `.Rmd`: RMarkdown file
