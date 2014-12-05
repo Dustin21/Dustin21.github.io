@@ -90,5 +90,31 @@ All details and pointers are provided on the assignment. If you need to have any
 
 Best of luck!
 
+***
+***
 
+### Week #3 - Vectors and Matrices
 
+This week we delve into the world of linear algebra and how matrices are used in programming.
+
+Check out the slides [here](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week3/Vectors%20and%20Matrix%20Algebra%20AQM.pdf?raw=true).
+
+Do your best to get through these primers. The first primer focusses on the theory behind vectors and matrices, then primer 2 delves into an application. It is important that you get familiar with these fundamentals, as we will be relying on them for majority of this workshop.
+
+Primer 1: [Theory of Vectors and Matrices](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week3/Matrix%20Algebra%20Theory%20Primer.pdf?raw=true)
+
+Primer 2: [Applications of Linear Algebra](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week3/Matrix%20Albegra%20Application%20Primer.pdf?raw=true)
+
+***
+***
+
+### Week #4 - Probability Basics
+
+The world is an uncertain place. It is for this reason that we need a way to quantify uncertainty for the models we use to explain it. We call this probability theory, and it will be the backbone of nearly every model we learn in this workshop. Therefore, the assumptions and limitations of the probability models we use will be one of the most important aspects.
+
+Here are the slides: [Intro to Probability](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week4/Probability%20AQM.pdf?raw=true)
+
+More will be added for this week soon. For now, study for those finals!
+
+***
+***
