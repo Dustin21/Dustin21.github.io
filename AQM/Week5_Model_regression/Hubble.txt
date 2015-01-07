@@ -1,0 +1,12 @@
+"case"	"x"	"y"
+"1"	"Virgo"	22	0.75
+"2"	"Pegasus"	68	2.4
+"3"	"Perseus"	108	3.2
+"4"	"ComaBerenices"	137	4.7
+"5"	"UrsaMajor1"	255	9.3
+"6"	"Leo"	315	12
+"7"	"CoronaBorealis"	390	13.4
+"8"	"Gemini"	405	14.4
+"9"	"Bootes"	685	24.5
+"10"	"UrsaMajor2"	700	26
+"11"	"Hydra"	1100	38
