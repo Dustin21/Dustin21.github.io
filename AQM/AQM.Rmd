@@ -130,7 +130,7 @@ More will be added for this week soon. For now, study for those finals!
 
 Welcome to the modelling section of the workshop!
 
-Today's slides.
+~ [Today's slides](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week5_Model_regression/Linear%20Regression.pptx?raw=true) ~
 
 Many of you are familiar with the infamous regression, but there's more to it than you might expect. This week we will dig deeper into the simple linear regression to understand its assumptions and how to decide whether it is the model for your application.
 
@@ -151,6 +151,7 @@ You will be modelling the data above with a linear regression. This will consist
 5. Investigate the 4 assumptions of your model with diagnostic plots (we will cover methods in the workshop).
 6. Ask yourself... "Is a linear model reasonable for my data?". If not, how do we progress?
 
+Please take the time to review the [Regression Theory Primer](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week5_Model_regression/Regression.pdf?raw=true) for next week! And review the primer for [vectors and matrices](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week3/Matrix%20Algebra%20Theory%20Primer.pdf?raw=true), as they will be vital as we move into multiple regression.
 
 ***
 ***
