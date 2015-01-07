@@ -62,6 +62,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <li><a href="#week-2---harder-better-faster-stronger">Week #2 - Harder Better Faster Stronger</a></li>
 <li><a href="#week-3---vectors-and-matrices">Week #3 - Vectors and Matrices</a></li>
 <li><a href="#week-4---probability-basics">Week #4 - Probability Basics</a></li>
+<li><a href="#modelling-with-simple-linear-regression-slr">Modelling with Simple Linear Regression (SLR)</a></li>
 </ul>
 </div>
 
@@ -152,6 +153,29 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <p>The world is an uncertain place. It is for this reason that we need a way to quantify uncertainty for the models we use to explain it. We call this probability theory, and it will be the backbone of nearly every model we learn in this workshop. Therefore, the assumptions and limitations of the probability models we use will be one of the most important aspects.</p>
 <p>Here are the slides: <a href="https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week4/Probability%20AQM.pdf?raw=true">Intro to Probability</a></p>
 <p>More will be added for this week soon. For now, study for those finals!</p>
+<hr />
+<hr />
+</div>
+<div id="modelling-with-simple-linear-regression-slr" class="section level3">
+<h3>Modelling with Simple Linear Regression (SLR)</h3>
+<p>Welcome to the modelling section of the workshop!</p>
+<p>Today’s slides.</p>
+<p>Many of you are familiar with the infamous regression, but there’s more to it than you might expect. This week we will dig deeper into the simple linear regression to understand its assumptions and how to decide whether it is the model for your application.</p>
+<p><em>Data for introductory example and in-class activity:</em></p>
+<p>We can read the following data into R directly from the online source, or save it on your computer and import it from there (I recommend the latter). HINT: the general R function is <code>read.table()</code>.</p>
+<ul>
+<li><p>Hubble data: <a href="https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week5_Model_regression/Hubble.txt">Hubble.txt</a></p></li>
+<li><p>Portfolio Rate of Returns (%): <a href="https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week5_Model_regression/Portfolio_Return.txt">Portfolio_Return.txt</a></p></li>
+</ul>
+<p>You will be modelling the data above with a linear regression. This will consist of the following:</p>
+<ol style="list-style-type: decimal">
+<li>Plotting the data using <code>plot()</code>.</li>
+<li>Fit the regression model using <code>lm()</code>.</li>
+<li>Examine the object and its <code>str()</code> &amp; <code>anova()</code> - check parameter esimates, and F-stat (why?).</li>
+<li>Overlay the regression line on the scatterplot with <code>lines()</code>.</li>
+<li>Investigate the 4 assumptions of your model with diagnostic plots (we will cover methods in the workshop).</li>
+<li>Ask yourself… “Is a linear model reasonable for my data?”. If not, how do we progress?</li>
+</ol>
 <hr />
 <hr />
 </div>

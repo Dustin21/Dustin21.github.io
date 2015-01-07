@@ -118,3 +118,34 @@ More will be added for this week soon. For now, study for those finals!
 
 ***
 ***
+
+### Modelling with Simple Linear Regression (SLR)
+
+Welcome to the modelling section of the workshop!
+
+Today's slides.
+
+Many of you are familiar with the infamous regression, but there's more to it than you might expect. This week we will dig deeper into the simple linear regression to understand its assumptions and how to decide whether it is the model for your application.
+
+_Data for introductory example and in-class activity:_
+
+We can read the following data into R directly from the online source, or save it on your computer and import it from there (I recommend the latter). HINT: the general R function is `read.table()`.
+
+* Hubble data: [Hubble.txt](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week5_Model_regression/Hubble.txt)
+
+* Portfolio Rate of Returns (%): [Portfolio_Return.txt](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week5_Model_regression/Portfolio_Return.txt)
+
+You will be modelling the data above with a linear regression. This will consist of the following:
+
+1. Plotting the data using `plot()`.
+2. Fit the regression model using `lm()`.
+3. Examine the object and its `str()` & `anova()` - check parameter esimates, and F-stat (why?).
+4. Overlay the regression line on the scatterplot with `lines()`.
+5. Investigate the 4 assumptions of your model with diagnostic plots (we will cover methods in the workshop).
+6. Ask yourself... "Is a linear model reasonable for my data?". If not, how do we progress?
+
+
+***
+***
+
+
