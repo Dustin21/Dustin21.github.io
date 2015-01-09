@@ -1,0 +1,56 @@
+---
+title: "Intro to Modelling - SLR Assignment"
+author: "Dustin Johnson"
+date: "January 9, 2015"
+output: html_document
+---
+
+In the previous workshop, we covered the basic concepts of simple linear regression (SLR). If you found the material rather confusing, I highly recommend you read the [Regression Theory Primer](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week5_Model_regression/Regression.pdf?raw=true). If you have difficulty with the notation and mathematical concepts, please let us know and we would be more than happy to help you. We will do our best to clarify and review the material next Wednesday (after you read the primer!).
+
+![](w5449egf111.gif)
+
+### SLR Assignment
+
+Your assignment for next Wednesday, Jan 14th, will require you to choose a stock of your choice and regress it against the S&P 500 market index. 
+
+To retrieve the data, you will be using an R application programming interface (API) called [_quantmod_](http://www.quantmod.com/). An API specifies how software components should interact - in this case, it enables you to streamline your data collection by cutting out the manual efforts of collecting the data yourself (an ugly, time consuming process). It makes things easier and more reproducible. Imagine constantly updating your data set manually by saving separate data files, loading them into R, and adding them to your existing data set. It already sounds exhausting! APIs enable you to do this with simple commands and functions through R!! People are realising the benefits of APIs, which is why they are becoming increasingly popular. R's existing APIs are located on [rOpenSci](http://ropensci.org/). If R doesn't have what you need, learn to make one yourself (later in the course, hopefully).
+
+#### Outline
+
+1. Install [quantmod](http://www.quantmod.com/) in R: `install.packages("quantmod")`.
+	* [quantmod](http://www.quantmod.com/) has much to offer, so examine the [help file](http://cran.r-project.org/web/packages/quantmod/quantmod.pdf) to learn more about the functions within the package. For the finance folks, the plethora of [finance functions](http://www.quantmod.com/documentation/00Index.html) may also be of interest.
+
+\
+
+2. Use the function `getSymbols()` from the quantmod package to retrieve the stock data of interest.
+	* ex. To retrieve the data for Apple, `AAPL <- getSymbols(Symbols = "AAPL", src = "yahoo", auto.assign = FALSE)`. You can import more than one data set by feeding a list of ticker symbols and setting `auto.assign = TRUE`. For instance, `c("AAPL", "MSFT")`.
+	* `auto.assign = TRUE` automatically assigns objects to the data denoted by their ticker symbols.
+	* You may specify a time-frame by adding `from = "YYYY-MM-DD", to = "YYYY-MM-DD"` within the `getSymbols()` function.
+
+\
+
+3. Import the S&P 500 market index that you will be regressing against. The ticker for the S&P 500 index is `^GSPC`. Index ticker symbols are slightly different, so make sure you confirm the ticker on your src (yahoo in this case) or quantmod won't be able to find it. 
+
+\
+
+4. Examine the data object using the techniques you have already learned - `str()`, `dim()`, `head()`, `time()`. Is this the data you want? Is the time-frame too long/short? What pieces do you need?
+	* ex. `dim(AAPL)` give me `2019   6`, implying 2019 rows and 6 columns. I may only want the year 2014 and column 6, so specify a time window like above and extract the column of choice.
+
+\
+
+5. You will need to "transform" the adjusted closing price of the stock and index into a vector of returns (daily, weekly, monthly, etc.). For those not in finance, a return is the change in closing price from one period to the next (rate of change). Returns can be calculated with `diff(a)/a[-length(a)]`, where `a` is the vector of adjusted closing prices (why is this so? What does `diff()` do?).  You may also use the function `periodReturn()` or `delta()` supplied by the quantmod package. Compare the two and make sure you get the same results. You can examine different return periods (daily, weekly, monthly, etc.) and see how your results change. Which period seems to work the best?
+
+6. Once you have the vector of returns for your stock and the S%P 500 index, make sure they have the same number of observations (we are regressing the two for the same time-periods). _Plot the data (stock return vs S&P 500 return) and explain your observations._
+
+7. Regress the stock returns against the S&P 500 returns as covered in the workshop using the `lm()` function. Interpret the coefficient estimates and everything else in the `summary(your_model_object)` output. Use the primer, online forums, or ask around if you need help. 
+
+8. Make your conclusion and recommendations. I want to know if adding this stock to my portfolio would be beneficial, so don't screw me over! Make your recommendation as you would in a business setting toward non-quants or a portfolio manager.
+
+
+*The best way to learn is by figuring it out on your own. Send us an email if you really feel stuck, as we are more than happy to help. Remember, if you are uncertain about something, experiment and try to answer the question yourself!*
+
+All the best!
+
+~ Your friends at the AQM
+
+
