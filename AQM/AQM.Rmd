@@ -153,6 +153,8 @@ You will be modelling the data above with a linear regression. This will consist
 
 Please take the time to review the [Regression Theory Primer](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week5_Model_regression/Regression.pdf?raw=true) for next week! And review the primer for [vectors and matrices](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week3/Matrix%20Algebra%20Theory%20Primer.pdf?raw=true), as they will be vital as we move into multiple regression.
 
+Assignment (Due Wednesday, Jan. 14th): [Intro to Modelling - SLR Assignment](http://htmlpreview.github.io/?https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week5_Model_regression/SLR_Assignment.html)
+
 ***
 ***
 

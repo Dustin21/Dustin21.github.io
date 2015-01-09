@@ -1,5 +1,6 @@
 ---
 title: "Intro to Modelling - SLR Assignment"
+css: sky.css
 author: "Dustin Johnson"
 date: "January 9, 2015"
 output: html_document
