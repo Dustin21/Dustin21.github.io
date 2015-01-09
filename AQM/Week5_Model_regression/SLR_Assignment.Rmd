@@ -21,23 +21,19 @@ To retrieve the data, you will be using an R application programming interface (
 1. Install [quantmod](http://www.quantmod.com/) in R: `install.packages("quantmod")`.
 	* [quantmod](http://www.quantmod.com/) has much to offer, so examine the [help file](http://cran.r-project.org/web/packages/quantmod/quantmod.pdf) to learn more about the functions within the package. For the finance folks, the plethora of [finance functions](http://www.quantmod.com/documentation/00Index.html) may also be of interest.
 
-\
 
 2. Use the function `getSymbols()` from the quantmod package to retrieve the stock data of interest.
 	* ex. To retrieve the data for Apple, `AAPL <- getSymbols(Symbols = "AAPL", src = "yahoo", auto.assign = FALSE)`. You can import more than one data set by feeding a list of ticker symbols and setting `auto.assign = TRUE`. For instance, `c("AAPL", "MSFT")`.
 	* `auto.assign = TRUE` automatically assigns objects to the data denoted by their ticker symbols.
 	* You may specify a time-frame by adding `from = "YYYY-MM-DD", to = "YYYY-MM-DD"` within the `getSymbols()` function.
 
-\
 
 3. Import the S&P 500 market index that you will be regressing against. The ticker for the S&P 500 index is `^GSPC`. Index ticker symbols are slightly different, so make sure you confirm the ticker on your src (yahoo in this case) or quantmod won't be able to find it. 
 
-\
 
 4. Examine the data object using the techniques you have already learned - `str()`, `dim()`, `head()`, `time()`. Is this the data you want? Is the time-frame too long/short? What pieces do you need?
-	* ex. `dim(AAPL)` give me `2019   6`, implying 2019 rows and 6 columns. I may only want the year 2014 and column 6, so specify a time window like above and extract the column of choice.
+	* ex. `dim(AAPL)` gives me `2019   6`, implying 2019 rows and 6 columns. I may only want the year 2014 and column 6, so specify a time window like above and extract the column of choice.
 
-\
 
 5. You will need to "transform" the adjusted closing price of the stock and index into a vector of returns (daily, weekly, monthly, etc.). For those not in finance, a return is the change in closing price from one period to the next (rate of change). Returns can be calculated with `diff(a)/a[-length(a)]`, where `a` is the vector of adjusted closing prices (why is this so? What does `diff()` do?).  You may also use the function `periodReturn()` or `delta()` supplied by the quantmod package. Compare the two and make sure you get the same results. You can examine different return periods (daily, weekly, monthly, etc.) and see how your results change. Which period seems to work the best?
 
@@ -45,10 +41,14 @@ To retrieve the data, you will be using an R application programming interface (
 
 7. Regress the stock returns against the S&P 500 returns as covered in the workshop using the `lm()` function. Interpret the coefficient estimates and everything else in the `summary(your_model_object)` output. Use the primer, online forums, or ask around if you need help. 
 
-8. Make your conclusion and recommendations. I want to know if adding this stock to my portfolio would be beneficial, so don't screw me over! Make your recommendation as you would in a business setting toward non-quants or a portfolio manager. Remember to mention words like "confidence", "sensitivity", "systematic risk" and "idiosyncratic risk (error)".
+8. Make your conclusion and recommendations. I want to know if adding this stock to my portfolio would be beneficial, so don't screw me over! Make your recommendation as you would in a business setting toward non-quants or a portfolio manager. Remember to mention words like "confidence", "sensitivity", "systematic risk" and "idiosyncratic risk (error)". Submit your code, explanations, plots, conclusion, etc. in a presentable _Markdown_ (.md) report. Make it look professional and easy to follow.
 
 
 *The best way to learn is by figuring it out on your own. Send us an email if you really feel stuck, as we are more than happy to help. Remember, if you are uncertain about something, experiment and try to answer the question yourself!*
+
+![](corr_caus.png)
+
+_WARNING: correlation does not equal causation! Make sense out of everything you do. Do not go in blind. If your numbers look strange along the way, or something is not logical, do a sanity check and confirm your results through different approaches._
 
 All the best!
 
