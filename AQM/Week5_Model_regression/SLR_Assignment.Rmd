@@ -44,7 +44,7 @@ To retrieve the data, you will be using an R application programming interface (
 
 7. Regress the stock returns against the S&P 500 returns as covered in the workshop using the `lm()` function. Interpret the coefficient estimates and everything else in the `summary(your_model_object)` output. Use the primer, online forums, or ask around if you need help. 
 
-8. Make your conclusion and recommendations. I want to know if adding this stock to my portfolio would be beneficial, so don't screw me over! Make your recommendation as you would in a business setting toward non-quants or a portfolio manager.
+8. Make your conclusion and recommendations. I want to know if adding this stock to my portfolio would be beneficial, so don't screw me over! Make your recommendation as you would in a business setting toward non-quants or a portfolio manager. Remember to mention words like "confidence", "sensitivity", "systematic risk" and "idiosyncratic risk (error)".
 
 
 *The best way to learn is by figuring it out on your own. Send us an email if you really feel stuck, as we are more than happy to help. Remember, if you are uncertain about something, experiment and try to answer the question yourself!*
