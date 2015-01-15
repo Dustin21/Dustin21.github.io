@@ -151,4 +151,18 @@ Assignment (Due Wednesday, Jan. 14th): [Intro to Modelling - SLR Assignment](htt
 ***
 ***
 
+### More Regression
 
+Slides: [Regression.pdf](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week6_Regression/Regression.pdf?raw=true)
+
+Today's data: [bank.txt](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week6_Regression/bank.txt)
+
+Supplementary material (courtesy of George):
+
+This material is slightely more advanced, but provides great fundamentals to the topics covered in the workshop.
+
+1. [OLS Slides](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week6_Regression/GS_Linear_Regression_Slides.pdf?raw=true)
+2. [OLS Theory](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week6_Regression/GS_OLS_Notes.pdf?raw=true)
+
+***
+***
