@@ -166,3 +166,13 @@ This material is slightely more advanced, but provides great fundamentals to the
 
 ***
 ***
+
+### Applications in R
+
+Let's be biostatisticians!
+
+Our data: [gpro.txt](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week7_Prediction/gpro.txt)
+
+What is this data?
+
+biosystems data for ligand activation of G-protein in yeast. The input variables correspond to concentration of ligand and 3 kinetic parameters. The output represents the concentration of part of the complex. Everything has been tranformed and pre-processed for your convenience. The training set consists of the first 4000 observations, while the test set contains the remaining 10000.
