@@ -166,3 +166,18 @@ This material is slightely more advanced, but provides great fundamentals to the
 
 ***
 ***
+
+### Applying Concepts in R
+
+Let's become Biologists!
+
+This week's data: [gpro.txt](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week7_Prediction/gpro.txt)
+
+The G-Protein data attempts to model ligand activation of G-protein in yeast. The input variables correspond to the concentration of ligand and 3 kinetic parameters. The first 4000 observations are the training set, while the remaining 10000 are the test set.
+
+We will attempt to construct a model of the relationship of the covariates to the output, as well as build a predictive model.
+
+***
+***
+
+
