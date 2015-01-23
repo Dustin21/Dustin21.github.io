@@ -167,7 +167,7 @@ This material is slightely more advanced, but provides great fundamentals to the
 ***
 ***
 
-### Applications in R
+### Applications in R - Diagnostics
 
 Let's be biostatisticians!
 
@@ -176,3 +176,14 @@ Our data: [gpro.txt](https://raw.githubusercontent.com/Dustin21/Dustin21.github.
 What is this data?
 
 biosystems data for ligand activation of G-protein in yeast. The input variables correspond to concentration of ligand and 3 kinetic parameters. The output represents the concentration of part of the complex. Everything has been tranformed and pre-processed for your convenience. The training set consists of the first 4000 observations, while the test set contains the remaining 10000.
+
+Here's some information that can guide you through everything we covered last workshop. I've gathered the most concise and easy to read material from the internet, so hopefully they shed some light onto this workshop if you're feeling confused.
+
+* [QQ-plots](http://people.reed.edu/~jones/Courses/P14.pdf): Some great slides I found covering QQ-plots in detail.
+* [Partial Residual Plots](http://www.econ.uiuc.edu/~roger/courses/471/lectures/L4.pdf): Nice overview and proof of why partial residuals are better than basic residuals when plotting against each covariate.
+* [Diagnostic Plots of Assumptions](http://www-hsc.usc.edu/~eckel/biostat2/notes/notes10.pdf): General overview of using plots for violations in our regression assumptions.
+* [Evaluating Model Prediction](http://scott.fortmann-roe.com/docs/MeasuringError.html): Understanding the use of a training and test set (and beyond). If you want to be super prepared for next week, I recommend you delve further into this material.
+* Prediction Error: [simple](http://www.eumetcal.org/resources/ukmeteocal/verification/www/english/msg/ver_cont_var/uos3/uos3_ko1.htm), [detailed](http://www.geosci-model-dev.net/7/1247/2014/gmd-7-1247-2014.pdf): Get an understanding of the method of measuring prediction error and how to compare predictive models.
+
+***
+***

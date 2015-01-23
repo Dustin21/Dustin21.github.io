@@ -64,7 +64,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <li><a href="#week-4---probability-basics">Week #4 - Probability Basics</a></li>
 <li><a href="#modelling-with-simple-linear-regression-slr">Modelling with Simple Linear Regression (SLR)</a></li>
 <li><a href="#more-regression">More Regression</a></li>
-<li><a href="#applications-in-r">Applications in R</a></li>
+<li><a href="#applications-in-r---diagnostics">Applications in R - Diagnostics</a></li>
 </ul>
 </div>
 
@@ -196,12 +196,22 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <hr />
 <hr />
 </div>
-<div id="applications-in-r" class="section level3">
-<h3>Applications in R</h3>
+<div id="applications-in-r---diagnostics" class="section level3">
+<h3>Applications in R - Diagnostics</h3>
 <p>Let’s be biostatisticians!</p>
 <p>Our data: <a href="https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week7_Prediction/gpro.txt">gpro.txt</a></p>
 <p>What is this data?</p>
 <p>biosystems data for ligand activation of G-protein in yeast. The input variables correspond to concentration of ligand and 3 kinetic parameters. The output represents the concentration of part of the complex. Everything has been tranformed and pre-processed for your convenience. The training set consists of the first 4000 observations, while the test set contains the remaining 10000.</p>
+<p>Here’s some information that can guide you through everything we covered last workshop. I’ve gathered the most concise and easy to read material from the internet, so hopefully they shed some light onto this workshop if you’re feeling confused.</p>
+<ul>
+<li><a href="http://people.reed.edu/~jones/Courses/P14.pdf">QQ-plots</a>: Some great slides I found covering QQ-plots in detail.</li>
+<li><a href="http://www.econ.uiuc.edu/~roger/courses/471/lectures/L4.pdf">Partial Residual Plots</a>: Nice overview and proof of why partial residuals are better than basic residuals when plotting against each covariate.</li>
+<li><a href="http://www-hsc.usc.edu/~eckel/biostat2/notes/notes10.pdf">Diagnostic Plots of Assumptions</a>: General overview of using plots for violations in our regression assumptions.</li>
+<li><a href="http://scott.fortmann-roe.com/docs/MeasuringError.html">Evaluating Model Prediction</a>: Understanding the use of a training and test set (and beyond). If you want to be super prepared for next week, I recommend you delve further into this material.</li>
+<li>Prediction Error: <a href="http://www.eumetcal.org/resources/ukmeteocal/verification/www/english/msg/ver_cont_var/uos3/uos3_ko1.htm">simple</a>, <a href="http://www.geosci-model-dev.net/7/1247/2014/gmd-7-1247-2014.pdf">detailed</a>: Get an understanding of the method of measuring prediction error and how to compare predictive models.</li>
+</ul>
+<hr />
+<hr />
 </div>
 
 

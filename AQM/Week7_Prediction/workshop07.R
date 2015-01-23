@@ -8,11 +8,11 @@ library(DAAG)
 
 
 # read data ************************
-gpro <- x <-read.csv("gpro.txt", header = FALSE, col.names = c("x1", "x2", "x3", "x4", "y"))
+gpro <- read.csv("gpro.txt", header = FALSE, col.names = c("x1", "x2", "x3", "x4", "y"))
 
 # separate train and test *********************
 train <- gpro[1:4000,]
-test <- gpro[4001:10000,]
+test <- gpro[4001:14000,]
 
 # Randomly sample number of train and test *********************
 # Use sample.int
