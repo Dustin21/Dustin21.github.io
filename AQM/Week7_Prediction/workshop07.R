@@ -138,26 +138,26 @@ AE <- sum(abs(pred - obs))
 # Simulating residual plots
 
 # example plots: nonconstant variance
-par(mfrow=c(3,3))
+par(mfrow=c(2,2))
 
-for(i in 1:9) plot(1:50,rnorm(50))
+plot(1:50,rnorm(50))
 # constant variance
-for(i in 1:9) plot(1:50,(1:50)*rnorm(50))
+plot(1:50,(1:50)*rnorm(50))
 # strong heterogeneity
-for(i in 1:9) plot(1:50,sqrt((1:50))*rnorm(50))
+plot(1:50,sqrt((1:50))*rnorm(50))
 # mild heterogeneity
-for(i in 1:9) plot(1:50,cos((1:50)*pi/25)+rnorm(50))
+plot(1:50,cos((1:50)*pi/25)+rnorm(50))
 # non-linearity
 
 # example plots: normality of errors
 par(mfrow=c(2,2))
-for(i in 1:9) x = rnorm(50); qqnorm(x); qqline(x)
+x = rnorm(50); qqnorm(x); qqline(x)
 # standard normal distribution
-for(i in 1:9) x = rlnorm(50); qqnorm(x); qqline(x)
+x = rlnorm(50); qqnorm(x); qqline(x)
 # lognormal distribution - skew to right
-for(i in 1:9) x = rt(50,1); qqnorm(x); qqline(x)
+x = rt(50,1); qqnorm(x); qqline(x)
 # Student t-distribution with one df (heavy tails)
-for(i in 1:9) x = runif(50); qqnorm(x); qqline(x)
+x = runif(50); qqnorm(x); qqline(x)
 # uniform (0,1) distribution (short tails)
 
 # Cross-validation loop
