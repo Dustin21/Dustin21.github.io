@@ -192,5 +192,8 @@ Here's some information that can guide you through everything we covered last wo
 * [Evaluating Model Prediction](http://scott.fortmann-roe.com/docs/MeasuringError.html): Understanding the use of a training and test set (and beyond). If you want to be super prepared for next week, I recommend you delve further into this material.
 * Prediction Error: [simple](http://www.eumetcal.org/resources/ukmeteocal/verification/www/english/msg/ver_cont_var/uos3/uos3_ko1.htm), [detailed](http://www.geosci-model-dev.net/7/1247/2014/gmd-7-1247-2014.pdf): Get an understanding of the method of measuring prediction error and how to compare predictive models.
 
+[R Source](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week7_Prediction/workshop07.R) for the gpro application.
+
 ***
 ***
+
