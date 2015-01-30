@@ -190,3 +190,13 @@ Here's some information that can guide you through everything we covered last wo
 ***
 ***
 
+### Cross Validation (CV)
+
+Here are some helpful resources on what we have covered thus far on implementing CV to measure predictive performance of a particular model.
+
+1. [Why CV?](http://robjhyndman.com/hyndsight/crossvalidation/)
+2. [Intro to CV methods](http://www.cs.cmu.edu/~schneide/tut5/node42.html)
+3. Some [slides](http://research.cs.tamu.edu/prism/lectures/iss/iss_l13.pdf) that may help reinforce your understanding.
+
+***
+***
