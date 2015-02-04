@@ -68,24 +68,24 @@ abline(h=0, col = "red")
 
 
 # example plots: nonconstant variance
-par(mfrow=c(3,3))
+par(mfrow=c(2,2))
 
-for(i in 1:9) plot(1:50,rnorm(50))
+plot(1:50,rnorm(50), main = "constant var")
 # constant variance
-for(i in 1:9) plot(1:50,(1:50)*rnorm(50))
+plot(1:50,(1:50)*rnorm(50), main = "strong heterogeneity")
 # strong heterogeneity
-for(i in 1:9) plot(1:50,sqrt((1:50))*rnorm(50))
+plot(1:50,sqrt((1:50))*rnorm(50), main = "mild heterogeneity")
 # mild heterogeneity
-for(i in 1:9) plot(1:50,cos((1:50)*pi/25)+rnorm(50))
+plot(1:50,cos((1:50)*pi/25)+rnorm(50), main = " non-linearity")
 # non-linearity
 
 # example plots: normality of errors
 par(mfrow=c(2,2))
-for(i in 1:9) x = rnorm(50); qqnorm(x); qqline(x)
+x = rnorm(50); qqnorm(x, main = "std normal"); qqline(x)
 # standard normal distribution
-for(i in 1:9) x = rlnorm(50); qqnorm(x); qqline(x)
+x = rlnorm(50); qqnorm(x, main = "right skew"); qqline(x)
 # lognormal distribution - skew to right
-for(i in 1:9) x = rt(50,1); qqnorm(x); qqline(x)
+x = rt(50,1); qqnorm(x, main = "heavy tails"); qqline(x)
 # Student t-distribution with one df (heavy tails)
-for(i in 1:9) x = runif(50); qqnorm(x); qqline(x)
+x = runif(50); qqnorm(x, main = "short tails"); qqline(x)
 # uniform (0,1) distribution (short tails)
