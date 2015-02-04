@@ -16,7 +16,7 @@ test <- gpro[4001:14000,]
 
 # Randomly sample number of train and test *********************
 # Use sample.int
-train_sample <- train[sample.int(dim(train)[1], 100),]
+train_sample <- train[sample.int(dim(train)[1], 200),]
 test_sample <- test[sample.int(dim(test)[1], 1000),]
 # Use sample_n from dplyr package
 x.train <- sample_n(train, 100)
