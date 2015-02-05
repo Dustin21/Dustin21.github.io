@@ -64,4 +64,3 @@ for(i in 2:n) {
 	crossVal[i-1] <- attr(cv.lm(x.train, mod2, i, plotit = FALSE), "ms")
 }
 plot(crossVal, col = "red", type = "l", lwd = 2)
-
