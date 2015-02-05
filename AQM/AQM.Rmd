@@ -207,5 +207,7 @@ Here are some helpful resources on what we have covered thus far on implementing
 2. [Intro to CV methods](http://www.cs.cmu.edu/~schneide/tut5/node42.html)
 3. Some [slides](http://research.cs.tamu.edu/prism/lectures/iss/iss_l13.pdf) that may help reinforce your understanding.
 
+[R source](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week8_CV/CV.R) for CV of our linear models with the `gpro` data set.
+
 ***
 ***
