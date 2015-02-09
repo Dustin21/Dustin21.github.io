@@ -97,7 +97,7 @@ lines(NPV2 ~ Rate, DiscountMatrix, col = "blue", lwd = 2)
 abline(h = 0, lty = 2, col = "red", lwd = 2)
 ```
 
-**Q4:** What is the IRR of project 1 and project 2? It is easy to see by the graph, but can you calculate it exactly? If not, how close can you get? We could simply look at our data and choose the NPV that provides the discount rate closest to 0, but can you do it computationally? You can use `if()` statements and/or logical operators `<`,`>`,`=`. If you are having trouble with the logic, search Google or forums like [Stack Overflow](http://stackoverflow.com/) for help (that's how I learned). Remember, you can check the NPV on rates closer and closer to your target by making the increments in the function `seq()` smaller with `by`, i.e., `seq(0.01,0.13,by = ?).
+**Q4:** What is the IRR of project 1 and project 2? It is easy to see by the graph, but can you calculate it exactly? If not, how close can you get? We could simply look at our data and choose the NPV that provides the discount rate closest to 0, but can you do it computationally? You can use `if()` statements and/or logical operators `<`,`>`,`=`. If you are having trouble with the logic, search Google or forums like [Stack Overflow](http://stackoverflow.com/) for help (that's how I learned). Remember, you can check the NPV on rates closer and closer to your target by making the increments in the function `seq()` smaller with `by`, i.e., `seq(0.01,0.13,by = ?)`.
 
 **Q5:** Make a conclusion of your results. What does the IRR mean in each context? Does this make logical sense?
 
