@@ -33,7 +33,11 @@ cashFlows2 <- c(-1000, rep(0,5), 1550)
 discountRate <- 0.05
 ```
 
-Our interest is to computationally compute the stream of discounted CFs and determine the NPV of the project investment. We can think of the computation as repeating the discount process (the denominator) over each of the CFs and inputting each result into an empty vector, which we will ultimately sum together as our NPV. Sure sounds like a loop to me! 
+$$
+\mathrm{NPV}(i, N) = \sum_{t=0}^{N} \frac{R_t}{(1+i)^{t}}
+$$
+
+Our interest is to computationally compute the stream of discounted CFs (where $R_{t}$ are the CFs at time $t$, and $i$ is the discount rate) and determine the NPV of the project investment. We can think of the computation as repeating the discount process (the denominator) over each of the CFs and inputting each result into an empty vector, which we will ultimately sum together as our NPV. Sure sounds like a loop to me! 
 
 **Q1:** Please explain the loop below in a detailed manner. What is the loop attempting to do? What is the purpose of each variable/object? What object will have our results? Please output the object created by the loop and indicate whether or not the results are reasonable.
 
@@ -61,7 +65,11 @@ kable(data.frame(NPVmat), align = "l")
 
 **Part 2 - Determine the IRR**
 
-We will now identify the IRR of each project - the discount rate that makes the NPV zero. In many cases, this cannot be accomplished with a closed form solution like what many of you remember from COMM 298. Essentially, what we are doing is telling the computer to check a sequence of discount rates by trial and error over and over again (solving numerically). This application will make use of an empty matrix and vector, as we will be calculating the NPV (as above) at each discount rate in the `DiscountRates` object. 
+$$
+\mathrm{NPV}(i, N) = 0 = \sum_{t=0}^{N} \frac{R_t}{(1+i)^{t}}
+$$
+
+We will now identify the IRR of each project - the discount rate $i$ that makes the NPV zero. In many cases, this cannot be accomplished with a closed form solution like what many of you remember from COMM 298. Essentially, what we are doing is telling the computer to check a sequence of discount rates by trial and error over and over again (solving numerically). This application will make use of an empty matrix and vector, as we will be calculating the NPV (as above) at each discount rate in the `DiscountRates` object. 
 
 **Q3:** Explain all the objects, variables and the process of the loop below in detail. What are we really doing? Is there an easier way? When you finish explaining, call the object created by the loop (the empty rows should now be full) and explain whether they seem logical.
 
