@@ -1,0 +1,136 @@
+---
+title: "Automating Computation with Loops"
+css: sky.css
+author: "Dustin Johnson"
+date: "February 8, 2015"
+output: html_document
+---
+
+In this assignment, you will be expected to walk through and explain what is happening in each loop provided. You will then be asked to adjust some of the ranges, parameters, and provide a concrete conclusion of the results. Please follow along by writing the code in R yourself.
+
+At this point, all of you have some experience with Net Present Value (NPV) and Internal Rate of Return (IRR) from COMM 298, or some sort of corporate finance. In this application, we will be computing the NPV and IRR of two projects with cash flows denoted `cashFlows1` and `cashFlows2`. This application will demonstrate the usefulness of loops with a simple financial concept.
+
+For those who need a refresher on the concepts, read the links below:
+
+* [Net Present Value (NPV)](http://www.investopedia.com/terms/n/npv.asp)
+* [Internal Rate of Return (IRR)](http://www.investopedia.com/terms/i/irr.asp)
+
+Let's begin!
+
+**Part 1 - Determine the NPV**
+
+We begin with two streams of future cash flows (CF), namely, `cashFlows1` and `cashFlows2`, which pertain to two independent projects that you are contemplating of undertaking. The discount rate is expected to be 5% over this period. 
+
+```{r, echo=FALSE}
+# Package for markdown "kable" tables
+library(knitr)
+```
+
+```{r}
+# Input cash flows of specific projects
+cashFlows1 <- c(-1000, rep(220,6))
+cashFlows2 <- c(-1000, rep(0,5), 1550)
+discountRate <- 0.05
+```
+
+Our interest is to computationally compute the stream of discounted CFs and determine the NPV of the project investment. We can think of the computation as repeating the discount process (the denominator) over each of the CFs and inputting each result into an empty vector, which we will ultimately sum together as our NPV. Sure sounds like a loop to me! 
+
+**Q1:** Please explain the loop below in a detailed manner. What is the loop attempting to do? What is the purpose of each variable/object? What object will have our results? Please output the object created by the loop and indicate whether or not the results are reasonable.
+
+```{r}
+n <- length(cashFlows1)
+
+discountCF_1 <- rep(0, n)
+discountCF_2 <- rep(0, n)
+
+for(i in 1:n) {
+	discountCF_1[i] <- cashFlows1[i]/(1+discountRate)^(i-1)
+	discountCF_2[i] <- cashFlows2[i]/(1+discountRate)^(i-1)
+	discountMat <- cbind(discountCF_1, discountCF_2)
+}
+```
+
+**Q2:** Sum the discounted cash flows together and determine the NPV of project 1 and 2. State a reasonable conclusion and which project you will undertake with a cash constraint of $200. Your numbers should match with those below:
+
+```{r, results='asis', echo=FALSE}
+NPVmat <- data.frame(colSums(discountMat))
+rownames(NPVmat) <- c("Project_1", "Project_2")
+colnames(NPVmat) <- "NPV"
+kable(data.frame(NPVmat))
+```
+
+**Part 2 - Determine the IRR**
+
+We will now identify the IRR of each project - the discount rate that makes the NPV zero. In many cases, this cannot be accomplished with a closed form solution like what many of you remember from COMM 298. Essentially, what we are doing is telling the computer to check a sequence of discount rates by trial and error over and over again (solving numerically). This application will make use of an empty matrix and vector, as we will be calculating the NPV (as above) at each discount rate in the `DiscountRates` object. 
+
+**Q3:** Explain all the objects, variables and the process of the loop below in detail. What are we really doing? Is there an easier way? When you finish explaining, call the object created by the loop (the empty rows should now be full) and explain whether they seem logical.
+
+```{r}
+DiscountRates <- seq(0.01,0.13,0.001)
+rates_n <- length(DiscountRates)
+# Empty matrix for each project's NPV 
+# for each discount rate
+DiscountMatrix <- cbind(0,0,DiscountRates)
+colnames(DiscountMatrix) <- c("NPV1", "NPV2", "Rate")
+
+# empty vectors
+n <- length(cashFlows1)
+discountCF_1 <- rep(0, n)
+discountCF_2 <- rep(0, n)
+
+for(i in 1:rates_n) {
+	for(j in 1:n){
+		discountCF_1[j] <- cashFlows1[j]/(1+DiscountRates[i])^(j-1)
+		discountCF_2[j] <- cashFlows2[j]/(1+DiscountRates[i])^(j-1)
+	}
+	DiscountMatrix[i,1] <- sum(discountCF_1)
+	DiscountMatrix[i,2] <- sum(discountCF_2)
+}
+```
+
+One of the main purposes of creating the loop above with a matrix was to ensure easy plotting. Plot your results and ensure they look the same as below:
+```{r, results='asis'}
+# Plot NPV vs Discount Rate
+plot(NPV1 ~ Rate, DiscountMatrix, type = "l", col = "green",
+		 main = "NPV vs. Discount Rate")
+lines(NPV2 ~ Rate, DiscountMatrix, col = "blue", lwd = 2)
+abline(h = 0, lty = 2, col = "red", lwd = 2)
+```
+
+**Q4:** What is the IRR of project 1 and project 2? It is easy to see by the graph, but can you calculate it exactly? If not, how close can you get? We could simply look at our data and choose the NPV that provides the discount rate closest to 0, but can you do it computationally? You can use `if()` statements and/or logical operators `<`,`>`,`=`. If you are having trouble with the logic, search Google or forums like [Stack Overflow](http://stackoverflow.com/) for help (that's how I learned). Remember, you can check the NPV on rates closer and closer to your target by making the increments in the function `seq()` smaller with `by`, i.e., `seq(0.01,0.13,by = ?).
+
+**Q5:** Make a conclusion of your results. What does the IRR mean in each context? Does this make logical sense?
+
+
+**Part 2 - IRR can be Tricky**
+
+In this section we have a new project with a new cash flow stream, denoted `cashFlow_new`. The code looks very familiar, but now you need to experiment a bit on your own. I have left `DistcountRates` and `n` blank for you to fill in.
+
+Examine the impact of the discount rates on the projects NPV of this cash stream and identify the IRR. Be careful on selecting the `seq()` of your `DiscountRates`. I recommend starting with a sequence as wide as possible and examining the plot, then shrinking it after locating the approximate vicinity of the IRR. Interpret your results and come up with a sound conclusion. Would you take this project? Under what circumstance would you take the project?
+
+Don't forget to examine the logic of your data objects along the way and plot your findings along the way so you can visualise what is happening!
+
+```{r, eval=FALSE}
+cashFlow_new <- c(-200, rep(200, 5), -900)
+
+DiscountRates <- 
+rates_n <- length(DiscountRates)
+
+DiscountMatrix <- cbind(0,DiscountRates)
+colnames(DiscountMatrix) <- c("NPV1", "Rate")
+
+n <- 
+discountCF_new <- rep(0, n)
+
+for(i in 1:rates_n) {
+	for(j in 1:n){
+		discountCF_new[j] <- cashFlow_new[j]/(1+DiscountRates[i])^(j-1)
+	}
+	DiscountMatrix[i,1] <- sum(discountCF_new)
+}
+```
+
+You are finished! Congrats!
+
+***
+***
