@@ -209,5 +209,7 @@ Here are some helpful resources on what we have covered thus far on implementing
 
 [R source](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week8_CV/CV.R) for CV of our linear models with the `gpro` data set.
 
+[**Automating Computation with Loops Assignment**](http://htmlpreview.github.io/?https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week8_CV/Automating_Computation.html): Please try to finish by next week so we can start what you have all been waiting for!
+
 ***
 ***
