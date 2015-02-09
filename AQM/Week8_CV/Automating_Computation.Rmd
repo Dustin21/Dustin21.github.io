@@ -8,6 +8,8 @@ output: html_document
 
 In this assignment, you will be expected to walk through and explain what is happening in each loop provided. You will then be asked to adjust some of the ranges, parameters, and provide a concrete conclusion of the results. Please follow along by writing the code in R yourself.
 
+**Submit assignment as Markdown report, as usual.**
+
 At this point, all of you have some experience with Net Present Value (NPV) and Internal Rate of Return (IRR) from COMM 298, or some sort of corporate finance. In this application, we will be computing the NPV and IRR of two projects with cash flows denoted `cashFlows1` and `cashFlows2`. This application will demonstrate the usefulness of loops with a simple financial concept.
 
 For those who need a refresher on the concepts, read the links below:
