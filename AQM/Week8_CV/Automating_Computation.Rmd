@@ -104,9 +104,9 @@ abline(h = 0, lty = 2, col = "red", lwd = 2)
 
 **Part 2 - IRR can be Tricky**
 
-In this section we have a new project with a new cash flow stream, denoted `cashFlow_new`. The code looks very familiar, but now you need to experiment a bit on your own. I have left `DistcountRates` and `n` blank for you to fill in.
+In this section we have a new project with a new cash flow stream, denoted `cashFlow_new`. The code looks very familiar, but now you need to experiment a bit on your own. I have left `DistcountRates` and `n` blank for you to fill in. I have provided you with all the objects, but it's your turn to fill the right ones into the `?` in the loop. Use the previous question as your guide.
 
-Examine the impact of the discount rates on the projects NPV of this cash stream and identify the IRR. Be careful on selecting the `seq()` of your `DiscountRates`. I recommend starting with a sequence as wide as possible and examining the plot, then shrinking it after locating the approximate vicinity of the IRR. Interpret your results and come up with a sound conclusion. Would you take this project? Under what circumstance would you take the project?
+Examine the impact of the discount rates on the new project's NPV of this cash stream and identify the IRR. Be careful on selecting the `seq()` of your `DiscountRates`. I recommend starting with a sequence as wide as possible and examining the plot, then shrinking it after locating the approximate vicinity of the IRR. Interpret your results and come up with a sound conclusion. Would you take this project? Under what circumstance would you take the project?
 
 Don't forget to examine the logic of your data objects along the way and plot your findings along the way so you can visualise what is happening!
 
@@ -122,11 +122,11 @@ colnames(DiscountMatrix) <- c("NPV1", "Rate")
 n <- 
 discountCF_new <- rep(0, n)
 
-for(i in 1:rates_n) {
+for(i in 1:?) {
 	for(j in 1:n){
-		discountCF_new[j] <- cashFlow_new[j]/(1+DiscountRates[i])^(j-1)
+		?[j] <- ?[j]/(1+?[i])^(j-1)
 	}
-	DiscountMatrix[i,1] <- sum(discountCF_new)
+	?[i,1] <- sum(?)
 }
 ```
 

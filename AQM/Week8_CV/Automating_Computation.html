@@ -137,8 +137,8 @@ abline(h = 0, lty = 2, col = &quot;red&quot;, lwd = 2)</code></pre>
 <p><strong>Q4:</strong> What is the IRR of project 1 and project 2? It is easy to see by the graph, but can you calculate it exactly? If not, how close can you get? We could simply look at our data and choose the NPV that provides the discount rate closest to 0, but can you do it computationally? You can use <code>if()</code> statements and/or logical operators <code>&lt;</code>,<code>&gt;</code>,<code>=</code>. If you are having trouble with the logic, search Google or forums like <a href="http://stackoverflow.com/">Stack Overflow</a> for help (that’s how I learned). Remember, you can check the NPV on rates closer and closer to your target by making the increments in the function <code>seq()</code> smaller with <code>by</code>, i.e., `seq(0.01,0.13,by = ?).</p>
 <p><strong>Q5:</strong> Make a conclusion of your results. What does the IRR mean in each context? Does this make logical sense?</p>
 <p><strong>Part 2 - IRR can be Tricky</strong></p>
-<p>In this section we have a new project with a new cash flow stream, denoted <code>cashFlow_new</code>. The code looks very familiar, but now you need to experiment a bit on your own. I have left <code>DistcountRates</code> and <code>n</code> blank for you to fill in.</p>
-<p>Examine the impact of the discount rates on the projects NPV of this cash stream and identify the IRR. Be careful on selecting the <code>seq()</code> of your <code>DiscountRates</code>. I recommend starting with a sequence as wide as possible and examining the plot, then shrinking it after locating the approximate vicinity of the IRR. Interpret your results and come up with a sound conclusion. Would you take this project? Under what circumstance would you take the project?</p>
+<p>In this section we have a new project with a new cash flow stream, denoted <code>cashFlow_new</code>. The code looks very familiar, but now you need to experiment a bit on your own. I have left <code>DistcountRates</code> and <code>n</code> blank for you to fill in. I have provided you with all the objects, but it’s your turn to fill the right ones into the <code>?</code> in the loop. Use the previous question as your guide.</p>
+<p>Examine the impact of the discount rates on the new project’s NPV of this cash stream and identify the IRR. Be careful on selecting the <code>seq()</code> of your <code>DiscountRates</code>. I recommend starting with a sequence as wide as possible and examining the plot, then shrinking it after locating the approximate vicinity of the IRR. Interpret your results and come up with a sound conclusion. Would you take this project? Under what circumstance would you take the project?</p>
 <p>Don’t forget to examine the logic of your data objects along the way and plot your findings along the way so you can visualise what is happening!</p>
 <pre class="r"><code>cashFlow_new &lt;- c(-200, rep(200, 5), -900)
 
@@ -151,11 +151,11 @@ colnames(DiscountMatrix) &lt;- c(&quot;NPV1&quot;, &quot;Rate&quot;)
 n &lt;- 
 discountCF_new &lt;- rep(0, n)
 
-for(i in 1:rates_n) {
+for(i in 1:?) {
     for(j in 1:n){
-        discountCF_new[j] &lt;- cashFlow_new[j]/(1+DiscountRates[i])^(j-1)
+        ?[j] &lt;- ?[j]/(1+?[i])^(j-1)
     }
-    DiscountMatrix[i,1] &lt;- sum(discountCF_new)
+    ?[i,1] &lt;- sum(?)
 }</code></pre>
 <p>You are finished! Congrats!</p>
 <hr />
