@@ -56,7 +56,7 @@ for(i in 1:n) {
 NPVmat <- data.frame(colSums(discountMat))
 rownames(NPVmat) <- c("Project_1", "Project_2")
 colnames(NPVmat) <- "NPV"
-kable(data.frame(NPVmat))
+kable(data.frame(NPVmat), align = "l")
 ```
 
 **Part 2 - Determine the IRR**
