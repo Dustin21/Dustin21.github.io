@@ -102,7 +102,7 @@ abline(h = 0, lty = 2, col = "red", lwd = 2)
 **Q5:** Make a conclusion of your results. What does the IRR mean in each context? Does this make logical sense?
 
 
-**Part 2 - IRR can be Tricky**
+**Part 3 - IRR can be Tricky**
 
 In this section we have a new project with a new cash flow stream, denoted `cashFlow_new`. The code looks very familiar, but now you need to experiment a bit on your own. I have left `DistcountRates` and `n` blank for you to fill in. I have provided you with all the objects, but it's your turn to fill the right ones into the `?` in the loop. Use the previous question as your guide.
 
