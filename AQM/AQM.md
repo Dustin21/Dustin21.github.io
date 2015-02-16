@@ -58,7 +58,7 @@ Spice your page up and experiment, as everyone will be viewing it at one point. 
 
 
 If you are anything like this:
-![omg](http://cdn.ebaumsworld.com/thumbs/2013/04/21/033626/83239236/smallreactio.jpg)
+![omg](http://media.giphy.com/media/8d72Pydfl4CAw/giphy-facebook_s.jpg)
 ask your fellow team members for assistance!
 
 ***
@@ -221,7 +221,7 @@ There are many ways to gather data, but this segment of the workshop will cover 
 
 I found a great overview of Oracle and its database system [here](http://docs.oracle.com/cd/E11882_01/server.112/e40540/intro.htm#CNCPT001). Use it to refresh yourself on how it works, as we will be dealing with Oracle exclusively.
 
-Please take the time to prepare for this Wednesday's workshop on SQL, especially if you haven't been exposed to it before. Here is a great [SQL learning resource](http://www.sqlcourse.com/) I would like you to follow. We will covering topics up to lesson 6.
+Please take the time to prepare for this Wednesday's workshop on SQL, especially if you haven't been exposed to it before. Here is a great [SQL learning resource](http://www.sqlcourse.com/) I would like you to follow. We will be covering topics up to lesson 6.
 
 ***
 ***
