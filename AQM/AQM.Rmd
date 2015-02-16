@@ -213,3 +213,22 @@ Here are some helpful resources on what we have covered thus far on implementing
 
 ***
 ***
+
+### Relational Database Management and SQL
+
+In order to construct our models and understand patterns in data, we need the data in the first place! Where do we get this data? How do we extract it?
+
+There are many ways to gather data, but this segment of the workshop will cover relational databases, such as Oracle, which is widely used by firms. We will learn how to extract valuable information from these databases using R-integrated SQL. In essence, we will be able to make queries to the database straight from R and clean/transform the data using R's powerful built-in C++ functions. The following R packages will be used extensively and intertwine with one-another, so better to check them out beforehand:
+
+* [grep](http://www.rdocumentation.org/packages/base/functions/grep): Pattern Matching and Replacement
+* [plyr](http://plyr.had.co.nz/): Implements the “split-apply-combine” strategy for data analysis and covers a diverse set of inputs and outputs (e.g., arrays, data.frames, lists).
+* [dplyr](http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html): a new package rooted in [plyr](http://plyr.had.co.nz/) for data manipulation. It is built to be fast, highly expressive, and open-minded about how your data is stored. Just wait until you see how useful this package will truly become!
+* [tidyr](http://blog.rstudio.org/2014/07/22/introducing-tidyr/): makes it easy to “tidy” your data (making it neat to work with). [Here](http://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html) is how the packages combine together.
+* [ggplot](http://www.ceb-institute.org/bbs/wp-content/uploads/2011/09/handout_ggplot2.pdf): The heaven of data visualisation. If you want nice visuals, I recommend the book [R Graphics Cookbook](http://www.cookbook-r.com/). It is a great introductory resource and manual to refer to.
+
+I found a great overview of Oracle and its database system [here](http://docs.oracle.com/cd/E11882_01/server.112/e40540/intro.htm#CNCPT001). Use it to refresh yourself on how it works, as we will be dealing with Oracle exclusively.
+
+Please take the time to prepare for this Wednesday's workshop on SQL, especially if you haven't been exposed to it before. Here is a great [SQL learning resource](http://www.w3schools.com/sql/) I would like you to follow.
+
+***
+***

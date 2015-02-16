@@ -66,6 +66,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <li><a href="#more-regression">More Regression</a></li>
 <li><a href="#applications-in-r---diagnostics">Applications in R - Diagnostics</a></li>
 <li><a href="#cross-validation-cv">Cross Validation (CV)</a></li>
+<li><a href="#relational-database-management-and-sql">Relational Database Management and SQL</a></li>
 </ul>
 </div>
 
@@ -226,6 +227,22 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 </ol>
 <p><a href="https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week8_CV/CV.R">R source</a> for CV of our linear models with the <code>gpro</code> data set.</p>
 <p><a href="http://htmlpreview.github.io/?https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week8_CV/Automating_Computation.html"><strong>Automating Computation with Loops Assignment</strong></a>: Please try to finish by next week so we can start what you have all been waiting for!</p>
+<hr />
+<hr />
+</div>
+<div id="relational-database-management-and-sql" class="section level3">
+<h3>Relational Database Management and SQL</h3>
+<p>In order to construct our models and understand patterns in data, we need the data in the first place! Where do we get this data? How do we extract it?</p>
+<p>There are many ways to gather data, but this segment of the workshop will cover relational databases, such as Oracle, which is widely used by firms. We will learn how to extract valuable information from these databases using R-integrated SQL. In essence, we will be able to make queries to the database straight from R and clean/transform the data using R’s powerful built-in C++ functions. The following R packages will be used extensively and intertwine with one-another, so better to check them out beforehand:</p>
+<ul>
+<li><a href="http://www.rdocumentation.org/packages/base/functions/grep">grep</a>: Pattern Matching and Replacement</li>
+<li><a href="http://plyr.had.co.nz/">plyr</a>: Implements the “split-apply-combine” strategy for data analysis and covers a diverse set of inputs and outputs (e.g., arrays, data.frames, lists).</li>
+<li><a href="http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html">dplyr</a>: a new package rooted in <a href="http://plyr.had.co.nz/">plyr</a> for data manipulation. It is built to be fast, highly expressive, and open-minded about how your data is stored. Just wait until you see how useful this package will truly become!</li>
+<li><a href="http://blog.rstudio.org/2014/07/22/introducing-tidyr/">tidyr</a>: makes it easy to “tidy” your data (making it neat to work with). <a href="http://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html">Here</a> is how the packages combine together.</li>
+<li><a href="http://www.ceb-institute.org/bbs/wp-content/uploads/2011/09/handout_ggplot2.pdf">ggplot</a>: The heaven of data visualisation. If you want nice visuals, I recommend the book <a href="http://www.cookbook-r.com/">R Graphics Cookbook</a>. It is a great introductory resource and manual to refer to.</li>
+</ul>
+<p>I found a great overview of Oracle and its database system <a href="http://docs.oracle.com/cd/E11882_01/server.112/e40540/intro.htm#CNCPT001">here</a>. Use it to refresh yourself on how it works, as we will be dealing with Oracle exclusively.</p>
+<p>Please take the time to prepare for this Wednesday’s workshop on SQL, especially if you haven’t been exposed to it before. Here is a great <a href="http://www.w3schools.com/sql/">SQL learning resource</a> I would like you to follow.</p>
 <hr />
 <hr />
 </div>
