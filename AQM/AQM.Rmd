@@ -211,7 +211,8 @@ Here are some helpful resources on what we have covered thus far on implementing
 2. [Intro to CV methods](http://www.cs.cmu.edu/~schneide/tut5/node42.html)
 3. Some [slides](http://research.cs.tamu.edu/prism/lectures/iss/iss_l13.pdf) that may help reinforce your understanding.
 
-[**Automating Computation with Loops Assignment**](http://htmlpreview.github.io/?https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week8_CV/Automating_Computation.html): Please try to finish by next week so we can start what you have all been waiting for!
+#### Automating Computation with Loops Assignment
+Check out your [Loops Assignment](http://htmlpreview.github.io/?https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week8_CV/Automating_Computation.html). Please try to finish by next week so we can start what you have all been waiting for!
 
 ***
 ***
@@ -328,6 +329,7 @@ plot_update <- plot + geom_point() +
   ggtitle("GDP Differential by Continent from 1952 - 1957") +
 	xlab("Year") + ylab("% Change in GDP per Capita") +
   theme(plot.title = element_text(size=15, face="bold", vjust=2))
+	
 print(plot_update)
 ```
 

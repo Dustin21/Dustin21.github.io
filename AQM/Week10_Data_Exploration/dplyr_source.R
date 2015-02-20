@@ -63,7 +63,7 @@ gdp.delta <- gapminder %>%
 	filter(year > 1952) %>%
 	group_by(year) %>%
 	summarise(gdp_delta = mean(change))
-print(gdpPercap)
+print(gdp.delta)
 
 # I am only interested in two countries, Canada and Afganistan,
 # so I will filter out only these two countries
