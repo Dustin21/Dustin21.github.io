@@ -121,6 +121,8 @@ More will be added for this week soon. For now, study for those finals!
 
 ### Modelling with Simple Linear Regression (SLR)
 
+**R source for this weeks activity:** [workshop_modelling.R](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week5_Model_regression/workshop_modelling.R) for today's activities.
+
 Welcome to the modelling section of the workshop!
 
 ~ [Today's slides](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week5_Model_regression/Linear%20Regression.pptx?raw=true) ~
@@ -131,9 +133,9 @@ _Data for introductory example and in-class activity:_
 
 We can read the following data into R directly from the online source, or save it on your computer and import it from there (I recommend the latter). HINT: the general R function is `read.table()`.
 
-* Hubble data: [Hubble.txt](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week5_Model_regression/Hubble.txt)
+* **Hubble data:** [Hubble.txt](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week5_Model_regression/Hubble.txt)
 
-* Portfolio Rate of Returns (%): [Portfolio_Return.txt](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week5_Model_regression/Portfolio_Return.txt)
+* **Portfolio Rate of Returns (%):** [Portfolio_Return.txt](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week5_Model_regression/Portfolio_Return.txt)
 
 You will be modelling the data above with a linear regression. This will consist of the following:
 
@@ -144,8 +146,6 @@ You will be modelling the data above with a linear regression. This will consist
 5. Investigate the 4 assumptions of your model with diagnostic plots (we will cover methods in the workshop).
 6. Ask yourself... "Is a linear model reasonable for my data?". If not, how do we progress?
 
-[R source](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week5_Model_regression/workshop_modelling.R) for today's activities.
-
 Please take the time to review the [Regression Theory Primer](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week5_Model_regression/Regression.pdf?raw=true) for next week! And review the primer for [vectors and matrices](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week3/Matrix%20Algebra%20Theory%20Primer.pdf?raw=true), as they will be vital as we move into multiple regression.
 
 Assignment (Due Wednesday, Jan. 14th): [Intro to Modelling - SLR Assignment](http://htmlpreview.github.io/?https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week5_Model_regression/SLR_Assignment.html)
@@ -155,9 +155,9 @@ Assignment (Due Wednesday, Jan. 14th): [Intro to Modelling - SLR Assignment](htt
 
 ### More Regression
 
-Slides: [Regression.pdf](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week6_Regression/Regression.pdf?raw=true)
+**Slides:** [Regression.pdf](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week6_Regression/Regression.pdf?raw=true)
 
-Today's data: [bank.txt](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week6_Regression/bank.txt)
+**Bank data:** [bank.txt](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week6_Regression/bank.txt)
 
 Supplementary material (courtesy of George):
 
@@ -171,13 +171,15 @@ This material is slightely more advanced, but provides great fundamentals to the
 
 ### Applications in R - Diagnostics
 
-Let's be biostatisticians!
+**G-pro data set:** [gpro.txt](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week7_Prediction/gpro.txt)
 
-Our data: [gpro.txt](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week7_Prediction/gpro.txt)
+**R Source G-pro application:** [gpro_model.R](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week7_Prediction/workshop07.R)
+
+_Let's be Biostatisticians!_
 
 What is this data?
 
-biosystems data for ligand activation of G-protein in yeast. The input variables correspond to concentration of ligand and 3 kinetic parameters. The output represents the concentration of part of the complex. Everything has been tranformed and pre-processed for your convenience. The training set consists of the first 4000 observations, while the test set contains the remaining 10000.
+Biosystems data for ligand activation of G-protein in yeast. The input variables correspond to concentration of ligand and 3 kinetic parameters. The output represents the concentration of part of the complex. Everything has been tranformed and pre-processed for your convenience. The training set consists of the first 4000 observations, while the test set contains the remaining 10000.
 
 Here's some information that can guide you through everything we covered last workshop. I've gathered the most concise and easy to read material from the internet, so hopefully they shed some light onto this workshop if you're feeling confused.
 
@@ -187,20 +189,18 @@ Here's some information that can guide you through everything we covered last wo
 * [Evaluating Model Prediction](http://scott.fortmann-roe.com/docs/MeasuringError.html): Understanding the use of a training and test set (and beyond). If you want to be super prepared for next week, I recommend you delve further into this material.
 * Prediction Error: [simple](http://www.eumetcal.org/resources/ukmeteocal/verification/www/english/msg/ver_cont_var/uos3/uos3_ko1.htm), [detailed](http://www.geosci-model-dev.net/7/1247/2014/gmd-7-1247-2014.pdf): Get an understanding of the method of measuring prediction error and how to compare predictive models.
 
-[R Source](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week7_Prediction/workshop07.R) for the `gpro` application.
-
 ***
 ***
 
 ### Cross Validation (CV)
+
+**R source for cross-validation application with G-pro:** [CV_application.R](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week8_CV/CV.R)
 
 Here are some helpful resources on what we have covered thus far on implementing CV to measure predictive performance of a particular model.
 
 1. [Why CV?](http://robjhyndman.com/hyndsight/crossvalidation/)
 2. [Intro to CV methods](http://www.cs.cmu.edu/~schneide/tut5/node42.html)
 3. Some [slides](http://research.cs.tamu.edu/prism/lectures/iss/iss_l13.pdf) that may help reinforce your understanding.
-
-[R source](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week8_CV/CV.R) for CV of our linear models with the `gpro` data set.
 
 [**Automating Computation with Loops Assignment**](http://htmlpreview.github.io/?https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week8_CV/Automating_Computation.html): Please try to finish by next week so we can start what you have all been waiting for!
 
@@ -222,6 +222,137 @@ There are many ways to gather data, but this segment of the workshop will cover 
 I found a great overview of Oracle and its database system [here](http://docs.oracle.com/cd/E11882_01/server.112/e40540/intro.htm#CNCPT001). Use it to refresh yourself on how it works, as we will be dealing with Oracle exclusively.
 
 Please take the time to prepare for this Wednesday's workshop on SQL, especially if you haven't been exposed to it before. Here is a great [SQL learning resource](http://www.sqlcourse.com/) I would like you to follow. We will be covering topics up to lesson 6.
+
+***
+***
+
+### Data Wrangling
+
+**Data for this week**: gapminder.tsv
+
+**R Source**: dplyr_source.R
+
+In the previous all-day workshop, we got quite familiar with the use of `data.frames` in R and what the `dplyr` package has to offer. Here is a quick summary:
+
+`data.frames` are specal forms of data objects in R that enable us to combine numerical, factor, string, and other types of data together. A simple matrix cannot combine different types of data, as we saw in class. Please refer the the R source we did in class. All the data we have been using is in the format of a `data.frame`. The packages that follow require `data.frames` to operate on.
+
+Using the gapminder data set, can you find me the continent with the fastest growing GDP per Capita in 1997? The question is simple, but how easy is it to actually perform? `dplyr` uses simple "verbs" that perform routine operations on your data, making these tasks simple! The "verbs" we covered are as follows:
+
+* `select()` - select the variables (columns) of the data you are interested in.
+* `filter()` - filter the rows of the data.frame utilising your logical operators `>`,`<`,`>=`,`<=`, and `==` according to the data of interest.
+* `group_by()` - group the data according to some category, for instance, group all data by continent.
+* `mutate()` - mutate or transform one variable into another using some function. For example, create a new variable (column) that is a combination of two other variables (population and GDP).
+* `summarize()` - Summarise multiple values to a single value. For example, the mean GDP or total GDP of each continent, where the continent group was created using the function `group_by()`. 
+* Check out the [dplyr](http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html) vignette to learn about more useful functions.
+
+We also learned about the use of the piping commands `%>%`, using `command⌘+shift+m`, making data wrangling intuitive and easy. Here is an example:
+
+**QUESTION: Can you find the world growth of GDP per Capita in 1997?**
+
+I would just like to **select** the _year_, _continent_ and _gdpPercap_ variables from the `gapminder` data object, **mutate** _gdpPercap_ into a new variable (column) called _change_ (rate of change of gdpPercap), **filter** all years greater (but not equal to) 1952 (why?), **group_by** year, and **summarize** the data by the mean rate of change of gdpPercap per the grouped category, year. 
+
+
+
+
+```r
+gdp.delta <- gapminder %>%
+	select(year, continent, gdpPercap) %>%
+	mutate(change = 100*((gdpPercap - lag(gdpPercap)))/gdpPercap) %>%
+	filter(year > 1952) %>%
+	group_by(year) %>%
+	summarise(gdp_delta = mean(change))
+```
+
+The result is an object `gdp.delta` with the mean rate of change of GDP per Capita for each year (5-year lag), as below:
+
+
+ year    gdp_delta  
+------  ------------
+ 1957    12.6140175 
+ 1962    11.0293491 
+ 1967    12.8726900 
+ 1972    13.8092669 
+ 1977    8.2764706  
+ 1982    3.0273164  
+ 1987    0.3031941  
+ 1992    -3.2216599 
+ 1997    6.0489270  
+ 2002    5.8104172  
+ 2007    13.8184345 
+
+We can use the piping command with a mixture of "verb" operations to conform and "wrangle" our data to the resulting `data.frame` required.
+
+***
+***
+
+### Data Visualisation
+
+**R Source for data visualisation:** 
+
+**Gapminder data set:** gapminder.tsv
+
+In the data wrangling section above, we learned how to obtain a data.frame with the information we desire with the `dplyr` package. Sometimes a simple data table or `data.frame` will suffice, although in many instances a plot or some visualisation of the data will make interpretation much easier. It is therefore very useful to have a visualisation to accompany a data table to convey your results.
+
+The `ggplot2` package provides a highly useful and stylish way to explore your data visually. After using ggplot2, you will never go back to R's native plot system. `ggplot2` is highly flexible and provides nearly publishable quality visualisations. `ggplot2` strictly uses `data.frames`, and follows the following syntax:
+
+
+```r
+plot <- ggplot(your data.frame, aes(x = ?, y = ?, colour = ?)) + ...
+```
+
+Firstly, you may notice that you can place your ggplot in an object. This is fantastic if you want to call it (or add to it) later in your code. The `aes` stands for aesthetics, which you can think of as the properties required for your plot, such as the x and y coordinates and colour. The `...` indicates what visualisation you would like to apply to your aesthetics. You may add many add-ons together, including lines, bar-plots, and more.
+
+**QUESTION: Can you find the continent with the fastest growing GDP per Capita in 2007?**
+
+From the code in the data wrangling section, we will make one slight modification - we will now group according to year and continent.
+
+```r
+library(ggplot2)
+
+gdp.delta <- gapminder %>%
+	select(year, continent, gdpPercap) %>%
+	mutate(change = 100*((gdpPercap - lag(gdpPercap)))/gdpPercap) %>%
+	filter(year > 1952) %>%
+	group_by(year, continent) %>%
+	summarise(gdp_delta = mean(change))
+
+plot <- ggplot(gdp.delta, aes(x = year, y = gdp_delta, colour = continent)) + geom_line()
+print(plot)
+```
+
+![](./AQM_files/figure-html/unnamed-chunk-5-1.png) 
+
+Now, let's add to our plot object with some points, a title, labels, and a theme.
+
+
+```r
+plot_update <- plot + geom_point() +
+	theme(panel.background = element_rect(fill='white', colour='black')) +
+  ggtitle("GDP Differential by Continent from 1952 - 1957") +
+	xlab("Year") + ylab("% Change in GDP per Capita") +
+  theme(plot.title = element_text(size=15, face="bold", vjust=2))
+print(plot_update)
+```
+
+![](./AQM_files/figure-html/unnamed-chunk-6-1.png) 
+
+Or with a `facet_wrap()`:
+
+
+```r
+plot_update + facet_wrap(~ continent) + theme(legend.position="none")
+```
+
+![](./AQM_files/figure-html/unnamed-chunk-7-1.png) 
+
+We can simply say that Asia has the fastest growing GDP per Capita in 2007, with Europe and the Americas close behind. `ggplot2` has much, much more to offer with customisable themes, add-ons and flexibility! Check out the following resources to fuel those plotting skills!
+
+* [ggplot2 overview](http://www.ceb-institute.org/bbs/wp-content/uploads/2011/09/handout_ggplot2.pdf)
+* [R Graphics Cookbook](http://www.cookbook-r.com/)
+* [ggthemes](http://cran.r-project.org/web/packages/ggthemes/vignettes/ggthemes.html): For a selection of creative themes.
+
+Have fun!
+
 
 ***
 ***
