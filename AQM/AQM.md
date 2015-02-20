@@ -228,9 +228,9 @@ Please take the time to prepare for this Wednesday's workshop on SQL, especially
 
 ### Data Wrangling
 
-**Data for this week**: gapminder.tsv
+**Data for this week** (_thanks to [Jennifer Bryan](https://github.com/jennybc)_): [gapminder.tsv](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week10_Data_Exploration/gapminder.tsv)
 
-**R Source**: dplyr_source.R
+**R Source**: [dplyr_source.R](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week10_Data_Exploration/dplyr_source.R)
 
 In the previous all-day workshop, we got quite familiar with the use of `data.frames` in R and what the `dplyr` package has to offer. Here is a quick summary:
 
@@ -280,7 +280,7 @@ The result is an object `gdp.delta` with the mean rate of change of GDP per Capi
  2002    5.8104172  
  2007    13.8184345 
 
-We can use the piping command with a mixture of "verb" operations to conform and "wrangle" our data to the resulting `data.frame` required.
+To answer our question, the world growth in GDP per Capita in 1997 is 6.048. We can use the piping command with a mixture of "verb" operations to conform and "wrangle" our data to the resulting `data.frame` required.
 
 ***
 ***
@@ -289,7 +289,7 @@ We can use the piping command with a mixture of "verb" operations to conform and
 
 **R Source for data visualisation:** 
 
-**Gapminder data set:** gapminder.tsv
+**Gapminder data set:** [gapminder.tsv](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week10_Data_Exploration/gapminder.tsv)
 
 In the data wrangling section above, we learned how to obtain a data.frame with the information we desire with the `dplyr` package. Sometimes a simple data table or `data.frame` will suffice, although in many instances a plot or some visualisation of the data will make interpretation much easier. It is therefore very useful to have a visualisation to accompany a data table to convey your results.
 

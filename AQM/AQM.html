@@ -250,8 +250,8 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 </div>
 <div id="data-wrangling" class="section level3">
 <h3>Data Wrangling</h3>
-<p><strong>Data for this week</strong>: gapminder.tsv</p>
-<p><strong>R Source</strong>: dplyr_source.R</p>
+<p><strong>Data for this week</strong> (<em>thanks to <a href="https://github.com/jennybc">Jennifer Bryan</a></em>): <a href="https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week10_Data_Exploration/gapminder.tsv">gapminder.tsv</a></p>
+<p><strong>R Source</strong>: <a href="https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week10_Data_Exploration/dplyr_source.R">dplyr_source.R</a></p>
 <p>In the previous all-day workshop, we got quite familiar with the use of <code>data.frames</code> in R and what the <code>dplyr</code> package has to offer. Here is a quick summary:</p>
 <p><code>data.frames</code> are specal forms of data objects in R that enable us to combine numerical, factor, string, and other types of data together. A simple matrix cannot combine different types of data, as we saw in class. Please refer the the R source we did in class. All the data we have been using is in the format of a <code>data.frame</code>. The packages that follow require <code>data.frames</code> to operate on.</p>
 <p>Using the gapminder data set, can you find me the continent with the fastest growing GDP per Capita in 1997? The question is simple, but how easy is it to actually perform? <code>dplyr</code> uses simple “verbs” that perform routine operations on your data, making these tasks simple! The “verbs” we covered are as follows:</p>
@@ -327,14 +327,14 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 </tr>
 </tbody>
 </table>
-<p>We can use the piping command with a mixture of “verb” operations to conform and “wrangle” our data to the resulting <code>data.frame</code> required.</p>
+<p>To answer our question, the world growth in GDP per Capita in 1997 is 6.048. We can use the piping command with a mixture of “verb” operations to conform and “wrangle” our data to the resulting <code>data.frame</code> required.</p>
 <hr />
 <hr />
 </div>
 <div id="data-visualisation" class="section level3">
 <h3>Data Visualisation</h3>
 <p><strong>R Source for data visualisation:</strong></p>
-<p><strong>Gapminder data set:</strong> gapminder.tsv</p>
+<p><strong>Gapminder data set:</strong> <a href="https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week10_Data_Exploration/gapminder.tsv">gapminder.tsv</a></p>
 <p>In the data wrangling section above, we learned how to obtain a data.frame with the information we desire with the <code>dplyr</code> package. Sometimes a simple data table or <code>data.frame</code> will suffice, although in many instances a plot or some visualisation of the data will make interpretation much easier. It is therefore very useful to have a visualisation to accompany a data table to convey your results.</p>
 <p>The <code>ggplot2</code> package provides a highly useful and stylish way to explore your data visually. After using ggplot2, you will never go back to R’s native plot system. <code>ggplot2</code> is highly flexible and provides nearly publishable quality visualisations. <code>ggplot2</code> strictly uses <code>data.frames</code>, and follows the following syntax:</p>
 <pre class="r"><code>plot &lt;- ggplot(your data.frame, aes(x = ?, y = ?, colour = ?)) + ...</code></pre>
