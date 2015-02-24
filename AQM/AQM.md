@@ -310,7 +310,7 @@ Firstly, you may notice that you can place your ggplot in an object. This is fan
 From the code in the data wrangling section, we will make one slight modification - we will now group according to year and continent.
 
 ```r
-library(ggplot2)
+suppressPackageStartupMessages(library(ggplot2))
 
 gdp.delta <- gapminder %>%
 	select(year, continent, gdpPercap) %>%

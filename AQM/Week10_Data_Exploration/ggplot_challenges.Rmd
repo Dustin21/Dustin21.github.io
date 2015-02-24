@@ -1,0 +1,120 @@
+---
+title: "Data Visualisation"
+author: "Dustin Johnson"
+date: "February 23, 2015"
+css: sky.css
+output: html_document
+---
+
+Wrangle that data!
+
+Here are some examples of data exploration using `dplyr`, and `ggplot2`. Refer to these examples when investigating the Gapminder data set yourself. Please attempt the challenges without looking at the code first. After your attempt, do your best to walk through and understand the code. If you can work through these challenges with ease, you are a data explorer!
+
+```{r}
+# load dependencies
+library(knitr)
+library(plyr)
+suppressPackageStartupMessages(library(gridExtra))
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(ggplot2))
+suppressPackageStartupMessages(library(gapminder))
+```
+
+**Challenge #1:** Can you examine the distribution of population of each continent for the year 2007? Why do I eliminate the continent of Oceania?
+
+```{r}
+gDat <- gapminder %>%
+	select(continent, year, pop) %>%
+	filter(year == 2007) %>%
+	filter(continent != "Oceania") %>% # what am I doing here? Why?
+	group_by(pop) # Why group by population?
+
+p1 <- ggplot(gDat, aes(log(pop), fill = continent)) + 
+	geom_density(alpha = 0.5) + # what does alpha do?
+	facet_wrap(~continent) + 
+	ggtitle("Distribution of Population by Continent in 2007")
+print(p1)
+```
+
+**Challenge #2:** Analyse the life expectancy over the years of 1952 to 2007 according to each continent. Do you notice any patterns or interesting behaviour?
+
+
+```{r}
+hDat <- gapminder %>%
+	select(continent, year, lifeExp) %>%
+	filter(year %in% seq(1992, 2007, 5)) %>% # what does %in% do?
+	filter(continent != "Oceania") %>% # why do I use "!="?
+	group_by(lifeExp)
+
+p2 <- ggplot(hDat, aes(year, lifeExp, colour = continent)) + 
+	geom_jitter() + # what does jitter do? Check it out!
+	ggtitle("Life expectancy of each Continent from 1990 to 2005")
+print(p2)
+```
+
+Let's overlay some trend lines for the life expectancy of each continent! What do the trends indicate? Do they add any value?
+
+```{r}
+p2 + stat_smooth(method = "lm", se = FALSE)
+```
+
+In the following plot, I examine life expectancy of African countries over the years of 1952 to 2007. The larger points indicate countries with higher GDP per Capita. Walk through the code and get a grasp of what I'm doing here. Try to apply the approach to different variables.
+
+```{r}
+iDat <- gapminder %>%
+	select(year, continent, country, lifeExp, gdpPercap) %>%
+	filter(continent == "Africa") %>%
+	group_by(continent, year)
+
+pi <- ggplot(iDat, aes(x = year, y = lifeExp, colour = country)) + 
+	geom_jitter(aes(size = gdpPercap)) +
+	theme(legend.position="none") +
+	ggtitle("Life expectancy by year for African Countries\n Size of Points correspond to level of GDP per Capita")
+print(pi)
+```
+
+**Challenge #3:** Extract data pertaining to Rwanda and examine the time-series of life expectancy, population and GDP per Capita. Do you notice any dramatic behaviour? If so, how do the three time-series interralate? Are they correlated in any way? Why or why not?
+
+```{r}
+jDat <- gapminder %>%
+	filter(country == "Rwanda") %>%
+	mutate(change.pop = 100*((pop - lag(pop)))/pop) %>%
+	mutate(change.lifeExp = 100*((lifeExp - lag(lifeExp)))/lifeExp) %>%
+	mutate(change.gdpPercap = 100*((gdpPercap - lag(gdpPercap)))/gdpPercap) %>%
+	select(country, year, change.pop, change.lifeExp, change.gdpPercap) %>%
+	filter(year > 1952) %>%
+	group_by(year)
+
+p3 <- ggplot(jDat, aes(y = change.pop, x = year)) + 
+	geom_line(colour = "magenta") +
+	ggtitle("Population Growth of Rwanda \n ~ 1957 - 2007 ~") +
+	ylab("Population Differential")
+p4 <- ggplot(jDat, aes(y = change.lifeExp, x = year)) +
+	geom_line(colour = "blue") +
+	ggtitle("Life Expectancy Differential of Rwanda \n ~ 1957 - 2007 ~") +
+	ylab("Life Expectancy Differential")
+p5 <- ggplot(jDat, aes(y = change.gdpPercap, x = year)) +
+	geom_line(colour = "orange") +
+	ggtitle("GDP per Capita Growth Rate of Rwanda \n ~ 1957 - 2007 ~") +
+	ylab("GDP Differential")
+
+# Use the gridExtra package
+grid.arrange(p4, arrangeGrob(p3, p5, ncol=2), ncol=1) # what does this do?
+```
+
+**Challenge #4:** Plot and contrast life expectancy to GDP per capita for the years of 1952, 1982, and 2007, then fit a trend line indicating the extent of the relationship. Do you notice any interesting pattern?
+
+```{r}
+kDat <- gapminder %>%
+	filter(year %in% c(1952, 1982, 2007)) %>%
+	group_by(year)
+
+ggplot(kDat, aes(y = lifeExp, x = log(gdpPercap), 
+								 colour = as.factor(year))) + 
+	geom_point(alpha = 0.6, size = 4) +
+	stat_smooth(method = "lm", size = 1, colour = "black", se = F) +
+	ggtitle("Life expectancy vs Logged GDP per Capita \n for years 1952, 1982, and 2007")
+```
+
+
+Stand by for more advanced exploration and modelling this week!

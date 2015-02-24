@@ -346,7 +346,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <p>Firstly, you may notice that you can place your ggplot in an object. This is fantastic if you want to call it (or add to it) later in your code. The <code>aes</code> stands for aesthetics, which you can think of as the properties required for your plot, such as the x and y coordinates and colour. The <code>...</code> indicates what visualisation you would like to apply to your aesthetics. You may add many add-ons together, including lines, bar-plots, and more.</p>
 <p><strong>QUESTION: Can you find the continent with the fastest growing GDP per Capita in 2007?</strong></p>
 <p>From the code in the data wrangling section, we will make one slight modification - we will now group according to year and continent.</p>
-<pre class="r"><code>library(ggplot2)
+<pre class="r"><code>suppressPackageStartupMessages(library(ggplot2))
 
 gdp.delta &lt;- gapminder %&gt;%
     select(year, continent, gdpPercap) %&gt;%
