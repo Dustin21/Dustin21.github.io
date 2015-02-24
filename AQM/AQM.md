@@ -290,7 +290,7 @@ To answer our question, the world growth in GDP per Capita in 1997 is 6.048. We 
 
 ### Data Visualisation
 
-**R Source for data visualisation:** 
+**R Source for data visualisation:** [dplyr & ggplot Challenges](http://htmlpreview.github.io/?https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week10_Data_Exploration/ggplot_challenges.html)
 
 **Gapminder data set:** [gapminder.tsv](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week10_Data_Exploration/gapminder.tsv)
 
