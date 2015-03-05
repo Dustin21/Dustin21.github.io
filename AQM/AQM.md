@@ -360,3 +360,17 @@ Have fun!
 
 ***
 ***
+
+### Working with APIs
+
+What is an API? API stands for “Application Programming Interface”, which is a way to let you talk to a 3rd-party application, usually either to retrieve data or update that application. Here is a good overview of [APIs](http://money.howstuffworks.com/business-communications/how-to-leverage-an-api-for-conferencing1.htm).
+
+![](apis.png)
+
+There are a few APIs in particular we will be examining that already have been integrated into R:
+
+1. [rOpenSci](http://ropensci.org/)
+2. [Quandl](https://www.quandl.com/)
+
+***
+***
