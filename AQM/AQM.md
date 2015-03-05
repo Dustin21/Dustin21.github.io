@@ -376,8 +376,9 @@ There are a few APIs in particular we will be examining that already have been i
 5. My WorldBank API (update this when I'm done!)
 
 ***
+***
 
-#### Group Project Outline - Due March 18th
+### Group Project Outline - Due March 18th
 
 You have formed groups of three. If you are not yet in a group, please notify us by email so we can find a place for you.
 
@@ -405,7 +406,9 @@ You have formed groups of three. If you are not yet in a group, please notify us
 * **Make use of [R Markdown chunk options](http://rmarkdown.rstudio.com/authoring_rcodechunks.html). I really don't want pages of code output that is ugly and doesn't belong (or add value) to the report.**
 
 
-[Report Example](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week11_API/Example.pdf?raw=true): This is an example of how I expect your report would look like. [Here's another](http://kieranhealy.org/files/misc/pandoc-template-rmd-output-sample.png) (without the code of course).
+[Report Example](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week11_API/Example.pdf?raw=true): This is an example (old homework assignment of mine) of how I expect your report would look like. It is also a guide to data cleaning, web scraping and intro use to the WorldBank API. [Here's another Example](http://kieranhealy.org/files/misc/pandoc-template-rmd-output-sample.png) (without the code of course).
+
+<font color="red"><b>Pretend I do not know the material and coding you're using. Cater the report to me as if you were teaching me about your process and results throughout (a walk-through).</b></font>
 
 
 
