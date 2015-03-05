@@ -378,7 +378,7 @@ You have formed groups of three. If you are not yet in a group, please notify us
 3. **Clean the Data**. Cleaning the data is a big task. You will likely have missing values, data sets of different dimensions, and similar country data with different country names (Dom. Rep. vs Dominican Republic). You will likely need to use [Stack Overflow](http://stackoverflow.com/) and [Google](www.google.ca) as a first resource, but please as questions if you're stuck!
 4. **Wrangle the Data**. Use `dplyr`, `plyr` and your piping commands to get the results you need. Also look into the package [tidyr](http://blog.rstudio.org/2014/07/22/introducing-tidyr/) - trust me, it will become a usefult tool. Turn your data into the form you need for the task at hand!
 5. **Visualise**. Use `ggplot2` to create visualisations of your data. Use visualisations to support your tables and results along the way. 
-6. **Present your Conclusion**. After your have fully analysed your results and have come up with a conclusion to your objective, state a clear and concise conclusion. Is there anything interesting that you would like to research further if you had more time?
+6. **Present your Conclusion**. After your have fully analysed your results and have come up with information regarding your objective, state a clear and concise conclusion. Is there anything interesting that you would like to research further if you had more time?
 
 <font color="red"><b>Expectations:</b></font>
 
@@ -386,12 +386,12 @@ You have formed groups of three. If you are not yet in a group, please notify us
 * You will write a final team Markdown report including:
 	* Introduction of your topic of research
 	* All code including the data cleaning process and packages used
-	* A thourough analysis and interpretation of results and process you took to reach your results (analysing the data in different ways while making use of `dplyr`, etc)
+	* A thorough analysis and interpretation of results and process you took to reach your results (analysing the data in different ways while making use of `dplyr`, etc)
 	* Visualisations
 	* Conclusion of your results and further possibilities
 	* Remarks stating the difficulties you faced and how you solved them
-* Each team member with push the final version of the Markdown report to their own repo. In addition, a printed copy will be handed in on Wednesday March 18th (Knit PDF in Markdown).
-* There will be a 15 minute presentation of your project. Please use [R Presentation](https://support.rstudio.com/hc/en-us/articles/200486468-Authoring-R-Presentations) to compile your slides (works just like markdown, and run your code in them!) Here's a visial [example](http://slidify.org/samples/intro/#1) with a custom theme.
+* Each team member will push the final version of the Markdown report to their own repo. In addition, a printed copy will be handed in on Wednesday March 18th (Knit PDF in Markdown).
+* There will be a 15 minute presentation of your project. Please use [R Presentation](https://support.rstudio.com/hc/en-us/articles/200486468-Authoring-R-Presentations) to compile your slides (works just like markdown, and run your code within the slides!) Here's a visial [example](http://slidify.org/samples/intro/#1) with a custom theme.
 * **Make use of [R Markdown chunk options](http://rmarkdown.rstudio.com/authoring_rcodechunks.html). I really don't want pages of code output that is ugly and doesn't belong (or add value) to the report.**
 
 
