@@ -395,7 +395,7 @@ You have formed groups of three. If you are not yet in a group, please notify us
 * **Make use of [R Markdown chunk options](http://rmarkdown.rstudio.com/authoring_rcodechunks.html). I really don't want pages of code output that is ugly and doesn't belong (or add value) to the report.**
 
 
-[Report Example](\Week11_API\Example.pdf): This is an example of how I expect your report would look like. [Here's another](http://kieranhealy.org/files/misc/pandoc-template-rmd-output-sample.png) (without the code of course).
+[Report Example](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week11_API/Example.pdf?raw=true): This is an example of how I expect your report would look like. [Here's another](http://kieranhealy.org/files/misc/pandoc-template-rmd-output-sample.png) (without the code of course).
 
 
 
