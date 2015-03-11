@@ -423,7 +423,11 @@ In the following, x represents one data frame that you are attempting to combine
 
 ### Logistic Regression
 
+Today's slides: [Dharu's](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week12_logit/Logistic%20Regression%20Dharu.pdf?raw=true), [Haihan's](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week12_logit/Logistic%20Regression.pptx?raw=true)
 
-$\mathbf{E}(Y_i|x_{i1},...,x_{ij}) = \alpha + \beta_1 X_{i1} + ... + \beta_p X_{ij} = \mathbf{X}\mathbf{\beta}$
+Updated soon! Check back for more material shortly.
+
+***
+***
 
 
