@@ -400,7 +400,30 @@ You have formed groups of three. If you are not yet in a group, please notify us
 
 <font color="red"><b>Pretend I do not know the material and coding you're using. Cater the report to me as if you were teaching me about your process and results throughout (a walk-through).</b></font>
 
+***
+***
 
+### Joins and Merges in SQL and R
+
+Let's say you have been working on your group project and have pulled out some interesting data from various sources that you would like to combine into a single data.frame that you can wrangle and visualise. You suddenly realise that all your data have different dimensions and some unneeded variables. This is when joins and merges come in! There are many ways to join and merge, and they are explained below:
+
+In the following, x represents one data frame that you are attempting to combine in some way or form with another data.frame object y. Check out the [full documentation](http://www.rdocumentation.org/packages/dplyr) here.
+
+* inner_join(x, y): return all rows from x where there are matching values in y, and all columns from x and y. If there are multiple matches between x and y, all combination of the matches are returned
+* semi_join(x, y): return all rows from x where there are matching values in y, keeping just columns from x. A semi join differs from an inner join because an inner join will return one row of x for each matching row of y, where a semi join will never duplicate rows of x.
+* left_join(x, y): return all rows from x, and all columns from x and y. If there are multiple matches between x and y, all combination of the matches are returned
+* anti_join(x, y): return all rows from x where there are not matching values in y, keeping just columns from x
+* merge(x, y): Merge two data frames by common columns or row names, or do other versions of database join operations
+
+
+![joins_merges](SQL_Joins.png)
 
 ***
 ***
+
+### Logistic Regression
+
+
+$\mathbf{E}(Y_i|x_{i1},...,x_{ij}) = \alpha + \beta_1 X_{i1} + ... + \beta_p X_{ij} = \mathbf{X}\mathbf{\beta}$
+
+
