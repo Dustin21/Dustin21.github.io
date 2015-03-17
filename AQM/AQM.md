@@ -435,7 +435,10 @@ In the following, x represents one data frame that you are attempting to combine
 
 Today's slides: [Dharu's](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week12_logit/Logistic%20Regression%20Dharu.pdf?raw=true), [Haihan's](https://github.com/Dustin21/Dustin21.github.io/blob/master/AQM/Week12_logit/Logistic%20Regression.pptx?raw=true)
 
-Updated soon! Check back for more material shortly.
+#### Application to Global Security Markets and the EMH
+
+This weeks application will be updated after Wednesday's workshop. Be sure to read the email we sent out so you are prepared for the activity.
+
 
 ***
 ***
