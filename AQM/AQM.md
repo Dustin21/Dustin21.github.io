@@ -437,7 +437,11 @@ Today's slides: [Dharu's](https://github.com/Dustin21/Dustin21.github.io/blob/ma
 
 #### Application to Global Security Markets and the EMH
 
-This weeks application will be updated after Wednesday's workshop. Be sure to read the email we sent out so you are prepared for the activity.
+**Research Paper we will be reviewing**: [EMH_paper.pdf](https://github.com/Dustin21/Dustin21.github.io/raw/master/AQM/Week13_FinMod/EMH_paper.pdf)
+
+**Slides**:
+
+**R Source**:
 
 
 ***
