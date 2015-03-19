@@ -439,7 +439,7 @@ Today's slides: [Dharu's](https://github.com/Dustin21/Dustin21.github.io/blob/ma
 
 **Research Paper we will be reviewing**: [EMH_paper.pdf](https://github.com/Dustin21/Dustin21.github.io/raw/master/AQM/Week13_FinMod/EMH_paper.pdf)
 
-**Slides**:
+**Slides**: [EMH_slides.pdf](https://github.com/Dustin21/Dustin21.github.io/raw/master/AQM/Week13_FinMod/EMH_slides.pdf)
 
 **R Source**:
 
