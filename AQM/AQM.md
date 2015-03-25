@@ -441,6 +441,8 @@ Today's slides: [Dharu's](https://github.com/Dustin21/Dustin21.github.io/blob/ma
 
 **Slides**: [EMH_slides.pdf](https://github.com/Dustin21/Dustin21.github.io/raw/master/AQM/Week13_FinMod/EMH_slides.pdf)
 
+**Data**: [index_dat.csv](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week13_FinMod/index_dat.csv) 
+
 **R Source**:
 
 
