@@ -433,7 +433,18 @@ Today's slides: [Dharu's](https://github.com/Dustin21/Dustin21.github.io/blob/ma
 
 **Data**: [index_dat.csv](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week13_FinMod/index_dat.csv) 
 
-**R Source**:
+**R Source**: [EMH_mod.R](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week13_FinMod/EMH_mod.R)
+
+For the next workshop, please do the following:
+
+1. Set up the confusion matrix for the logistic regression. That is, the matrix showing the number of correct vs incorrect predictions.
+2. Determine the classification error rate, as well as the error rate.
+3. Instead of reusing the training data, check your results with cross-validation (CV).
+	* Set up a cross-validation loop (or find a black-box function in R)
+	* Set up the confusion matrix corresponding to the cross-validated predictions
+	* Determine the CV classification rate and error rate
+	* Do the results coincide with the paper? How do the CV results differ from the fit on the training set? Is this meaningful?
+4. State your conclusion relating to the hypothesis mentioned in class (check slides)
 
 
 ***
