@@ -445,6 +445,7 @@ For the next workshop, please do the following:
 	* Determine the CV classification rate and error rate
 	* Do the results coincide with the paper? How do the CV results differ from the fit on the training set? Is this meaningful?
 4. State your conclusion relating to the hypothesis mentioned in class (check slides)
+5. Redo the above for a "short", as apposed to the "long" as presented in the paper. Just read through the paper, and it will tell you exactly how they tested for this, then follow the same procedure that you did for the long.
 
 
 ***
