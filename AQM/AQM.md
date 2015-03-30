@@ -410,6 +410,12 @@ You have formed groups of three. If you are not yet in a group, please notify us
 
 <font color="red"><b>Pretend I do not know the material and coding you're using. Cater the report to me as if you were teaching me about your process and results throughout (a walk-through).</b></font>
 
+#### Group Projects
+
+1. Group 1 - Vinicius, Jeffrey, Berk: [presentation](https://github.com/Dustin21/Dustin21.github.io/raw/master/AQM/group_projects/AQM.pdf), [report](https://github.com/Dustin21/Dustin21.github.io/raw/master/AQM/group_projects/AQM.Tourism.GDP.pdf), [repository](https://github.com/AQM-WorkshopRepo/Jeffrey_Li_AQM/blob/master/Country_GDP_v._Tourism_Expenditure.md)
+
+2. Group 2 - Michael, Izell, Claudia: [presentation](https://github.com/Dustin21/Dustin21.github.io/raw/master/AQM/group_projects/AQM%20Presentation.pptx)
+
 ***
 ***
 
