@@ -469,8 +469,11 @@ For the next workshop, please do the following:
 
 ### A Brief Intro to Time Series
 
-**R Source:** earnings_forecast.R
+**R Source:** [earnings_forecast.R](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week14_TimeSeries/earnings_forecast.R)
+
+**Data:** [earnings_data.csv](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week14_TimeSeries/earnings.csv)
 
 When it comes to time, we are limited to the data retrieved at that precise moment. It is for this reason that time series is _deterministic_, and we must use alternative methods for uncovering patterns. For the short time we have to delve into the topic, we will learn about trends, seasonality, stationarity and some simple transformations. The real interesting part is modelling the not-so-trivial part - the error. Time series decomposition will be the main focus, and we will motivate some topics in dealing with autocorrelated error (ARIMA, etc.). The topics will be time permitting.
 
-
+***
+***
