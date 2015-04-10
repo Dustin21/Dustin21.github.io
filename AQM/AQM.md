@@ -467,13 +467,39 @@ For the next workshop, please do the following:
 ***
 ***
 
-### A Brief Intro to Time Series
+### Intro to Time Series
 
 **R Source:** [earnings_forecast.R](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week14_TimeSeries/earnings_forecast.R)
 
 **Data:** [earnings_data.csv](https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week14_TimeSeries/earnings.csv)
 
 When it comes to time, we are limited to the data retrieved at that precise moment. It is for this reason that time series is _deterministic_, and we must use alternative methods for uncovering patterns. For the short time we have to delve into the topic, we will learn about trends, seasonality, stationarity and some simple transformations. The real interesting part is modelling the not-so-trivial part - the error. Time series decomposition will be the main focus, and we will motivate some topics in dealing with autocorrelated error (ARIMA, etc.). The topics will be time permitting.
+
+#### Autocorrelation (the correlogram):
+
+Your task:
+
+1. Retrieve a the adjusted closing price of a stock of your choice from the `quantmod` package using `getSymbols()`.
+2. Transform the vector of prices into returns.
+3. Construct a matrix with each column corresponding to an additional lag of the returns vector. For instance, the second column would be the lag one of the first column of returns, the third column would be lag two of the first column, and so on.
+4. Remove or `filter()` the `NA` values, as these are not needed.
+5. Examine the correlation matrix of the matrix above by calling the object in the function `cor()`. What seems to be happening as we look at the correlation of the lags of this time series? Do they increase? Diminish?
+6. Call your single return vector with the function `acf()`, which will output something called a correllogram. We can easily obtain the autocorrelation matrix over a series of lags from this function and also analyse the correlogram which plots the acf in an intuitive manner. Does this reinforce what you discovered in 5? Does the stock follow a "random walk"?
+
+There is much we can talk about regarding the autocorrelation (acf) and partial autocorrelation (pacf). We can use these to spot non-stationarity such as trends and seasonaility, as well as to uncover the structure of ARIMA process to model the error. Here's a [resource on ARIMA](http://sfb649.wiwi.hu-berlin.de/fedc_homepage/xplore/tutorials/xegbohtmlnode39.html) to fuel your interest.
+
+
+
+***
+***
+
+### Neural Networks
+
+Alas, we have arrived at a learning technique. Neural networks have captured interest in recent years due to improvements in computational efficiency, which has allowed these networks to be optimised (the original issue that slowed their development). We will be introducing Neural networks with a programming language called Python.
+
+Slides: 
+
+Python source:
 
 ***
 ***

@@ -73,7 +73,8 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <li><a href="#group-project-outline---due-march-18th">Group Project Outline - Due March 18th</a></li>
 <li><a href="#joins-and-merges-in-sql-and-r">Joins and Merges in SQL and R</a></li>
 <li><a href="#logistic-regression">Logistic Regression</a></li>
-<li><a href="#a-brief-intro-to-time-series">A Brief Intro to Time Series</a></li>
+<li><a href="#intro-to-time-series">Intro to Time Series</a></li>
+<li><a href="#neural-networks">Neural Networks</a></li>
 </ul>
 </div>
 
@@ -482,11 +483,32 @@ print(plot_update)</code></pre>
 <hr />
 </div>
 </div>
-<div id="a-brief-intro-to-time-series" class="section level3">
-<h3>A Brief Intro to Time Series</h3>
+<div id="intro-to-time-series" class="section level3">
+<h3>Intro to Time Series</h3>
 <p><strong>R Source:</strong> <a href="https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week14_TimeSeries/earnings_forecast.R">earnings_forecast.R</a></p>
 <p><strong>Data:</strong> <a href="https://raw.githubusercontent.com/Dustin21/Dustin21.github.io/master/AQM/Week14_TimeSeries/earnings.csv">earnings_data.csv</a></p>
 <p>When it comes to time, we are limited to the data retrieved at that precise moment. It is for this reason that time series is <em>deterministic</em>, and we must use alternative methods for uncovering patterns. For the short time we have to delve into the topic, we will learn about trends, seasonality, stationarity and some simple transformations. The real interesting part is modelling the not-so-trivial part - the error. Time series decomposition will be the main focus, and we will motivate some topics in dealing with autocorrelated error (ARIMA, etc.). The topics will be time permitting.</p>
+<div id="autocorrelation-the-correlogram" class="section level4">
+<h4>Autocorrelation (the correlogram):</h4>
+<p>Your task:</p>
+<ol style="list-style-type: decimal">
+<li>Retrieve a the adjusted closing price of a stock of your choice from the <code>quantmod</code> package using <code>getSymbols()</code>.</li>
+<li>Transform the vector of prices into returns.</li>
+<li>Construct a matrix with each column corresponding to an additional lag of the returns vector. For instance, the second column would be the lag one of the first column of returns, the third column would be lag two of the first column, and so on.</li>
+<li>Remove or <code>filter()</code> the <code>NA</code> values, as these are not needed.</li>
+<li>Examine the correlation matrix of the matrix above by calling the object in the function <code>cor()</code>. What seems to be happening as we look at the correlation of the lags of this time series? Do they increase? Diminish?</li>
+<li>Call your single return vector with the function <code>acf()</code>, which will output something called a correllogram. We can easily obtain the autocorrelation matrix over a series of lags from this function and also analyse the correlogram which plots the acf in an intuitive manner. Does this reinforce what you discovered in 5? Does the stock follow a “random walk”?</li>
+</ol>
+<p>There is much we can talk about regarding the autocorrelation (acf) and partial autocorrelation (pacf). We can use these to spot non-stationarity such as trends and seasonaility, as well as to uncover the structure of ARIMA process to model the error. Here’s a <a href="http://sfb649.wiwi.hu-berlin.de/fedc_homepage/xplore/tutorials/xegbohtmlnode39.html">resource on ARIMA</a> to fuel your interest.</p>
+<hr />
+<hr />
+</div>
+</div>
+<div id="neural-networks" class="section level3">
+<h3>Neural Networks</h3>
+<p>Alas, we have arrived at a learning technique. Neural networks have captured interest in recent years due to improvements in computational efficiency, which has allowed these networks to be optimised (the original issue that slowed their development). We will be introducing Neural networks with a programming language called Python.</p>
+<p>Slides:</p>
+<p>Python source:</p>
 <hr />
 <hr />
 </div>
