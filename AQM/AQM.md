@@ -502,7 +502,7 @@ Slides: [NeuralNets.pdf](https://github.com/Dustin21/Dustin21.github.io/raw/mast
 Python source: _in the slides_
 
 #### Assignment: 
-Read over and understand the Prime Number sieve algorithm that was covered this week in Python, then re-implement the algorithm in R. The Python code is provided in the slides on slide 10. All you must do is transfer it to R syntax and get it running in R. Cross-check to make sure both algorithms give you the same results.
+Read over and understand the Prime Number sieve algorithm that was covered this week in Python, then re-implement the algorithm in R. The Python code is provided in the slides on slide 10. All you must do is transfer it to R syntax and get it running in R. Cross-check to make sure both implementations give you the same results. Upload your R code up to your repo by next week.
 
 ***
 ***
