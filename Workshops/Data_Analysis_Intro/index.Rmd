@@ -23,16 +23,18 @@ Data answers the following three questions:
 <span style="color:dodgerblue; font-weight:bold"> Data itself has no meaning. It's what we can extract from it that gives it meaning. This requires analysing the data. </span>
 
 <BR>
+<span style="color:orange; font-weight:bold">
 That being said, personal bias and deceit can always play a role, which is another reason to learn to understand where the results came from!
+</span>
 </BR>
 
 ---
 
-![img](correlation.png)
+![img](Correlation.png)
 
 ---
 
-![img2](correlation_fin.png)
+![img2](Correlation_fin.png)
 
 ---
 
@@ -53,7 +55,7 @@ That being said, personal bias and deceit can always play a role, which is anoth
 ##  ... with Arnold quotes!
 
 
-![arnoldC](arnoldC.png)
+![arnoldC](ArnoldC.png)
 
 ---
 
@@ -68,7 +70,7 @@ That being said, personal bias and deceit can always play a role, which is anoth
 
 ---
 
-# Let's set up!
+# <span style="color:red; font-weight:bold">Let's set up!</span>
 
 ---
 
@@ -91,14 +93,15 @@ My.Object
 
 # Functions
 
-R has many build-in functions that perform tasks for you, saving you the work of programming them yourself.
+- R has many build-in functions that perform tasks for you, saving you the work of programming them yourself.
 
-Examples of functions are:
-- ```date()```
-- ```data()```
-- ```is.numeric()```
+- Examples of functions are:
+	- <span style="color:dodgerblue; font-weight:bold">date()</span>
+	- <span style="color:dodgerblue; font-weight:bold">data()</span>
+	- <span style="color:dodgerblue; font-weight:bold">is.numeric()</span>
 
-Many functions are available within packages, which R keeps in a its library. We can easily check what we have with the function ```library()```. For special (most) packages, we must download them from a magical place called Cran.
+
+- Many functions are available within packages, which R keeps in a its library. We can easily check what we have with the function ```library()```. For special (most) packages, we must download them from a magical place called Cran.
 
 ---
 
@@ -121,7 +124,9 @@ library(quantmod) # load the package in this R session
 
 ### What are the functions!? I need help!
 
-Firstly, Cran has all the tutorials you need online in a pdf format for each function. If thats not enough, Stack Overflow is a great great resource of fellow programmers. If you have a question, I can almost guarantee you'll find it there. More simply, we can do the following (assuming we know the function):
+- Firstly, Cran has all the tutorials you need online in a pdf format for each function. 
+- If thats not enough, Stack Overflow is a great great resource of fellow programmers. If you have a question, I can almost guarantee you'll find it there. 
+- More simply, we can do the following (assuming we know the function):
 
 ```{r, eval=FALSE}
 ?getSymbols
@@ -135,15 +140,15 @@ Firstly, Cran has all the tutorials you need online in a pdf format for each fun
 # Types of objects
 
 - numeric, integer, string: 
-	- x <- 5.09, y <- 2, z <- "cool"
+	- <span style="color:dodgerblue; font-weight:bold">x <- 5.09, y <- 2, z <- "cool"</span>
 - vectors: 
-	- vec <- c(2, 5 , 9)
+	- <span style="color:dodgerblue; font-weight:bold">vec <- c(2, 5 , 9)</span>
 - matrices: 
-	- mat <- matrix(c(1,2,3,7,7,8), nrow = 2)
+	- <span style="color:dodgerblue; font-weight:bold">mat <- matrix(c(1,2,3,7,7,8), nrow = 2)
 - data.frames: 
-	- df <- data.frame(hello = rep("hello", 4), int = seq(1, 4, by = 1), num = rnorm(4))
+	- <span style="color:dodgerblue; font-weight:bold">df <- data.frame(hello = rep("hello", 4), int = seq(1, 4, by = 1), num = rnorm(4))</span>
 - lists:
-	- mylist <- list(mat, df, vec)
+	- <span style="color:dodgerblue; font-weight:bold">mylist <- list(mat, df, vec)</span>
 
 ---
 
@@ -164,7 +169,7 @@ Firstly, Cran has all the tutorials you need online in a pdf format for each fun
 
 # Reading data
 
-Download the Sightings.csv from the website and save it into your working directory. The working directory is where R sees your files.
+Download the <span style="color:lightgreen; font-weight:bold">Sightings.csv</span> from the website and save it into your working directory. The working directory is where R sees your files.
 
 ```{r,echo=FALSE}
 data <- read.csv("Data/Sightings.csv")
@@ -182,22 +187,25 @@ head(data) # avoid seeing all the data at once
 
 # Examining the data
 
-Data is messy and usually contains way too much information to see with the naked eye. Luckily, R has built in functions that make this more of a human task:
+- Data is messy and usually contains way too much information to see with the naked eye. Luckily, R has built in functions that make this more of a human task:
 
-- str(data)
-- head(data); tail(data)
-- dim(data)
-- is.data.frame()
+- <span style="color:dodgerblue; font-weight:bold">str(data)</span>
+- <span style="color:dodgerblue; font-weight:bold">head(data); tail(data)</span>
+- <span style="color:dodgerblue; font-weight:bold">dim(data)</span>
+- <span style="color:dodgerblue; font-weight:bold">is.data.frame()</span>
+
 
 <BR>
-What do these functions tell you abou the data? So long Excel!
+<span style="color:lightgreen; font-weight:bold">
+What do these functions tell you abou the data? So long, Excel!
+</span>
 </BR>
 
 ---
 
 # Disseminating the Data
 
-We can pull what we need from the data using simple operators:
+- We can pull what we need from the data using simple operators:
 
 ```{r, eval=FALSE}
 sightings <- data$sightings # gives us the column (vector) called sightings
@@ -209,13 +217,13 @@ obs <- data[dim(data)[1], 1] # what does this do?
 obs2 <- max(data$sightings) # or max(sightings) as we alread made the sightings object
 ```
 
-Functions within functions are possible! Remember "?function_name" to learn about the funtion.
+<span style="color:orange; font-weight:bold"> Functions within functions are possible! Remember "?function_name" to learn about the funtion.</span>
 
 ---
 
 # Logical Operators
 
-- Logical operators consist of ">", "<", "==", ">=", "<=", "!". Look familiar?
+- <span style="color:dodgerblue; font-weight:bold"> Logical operators consist of ">", "<", "==", ">=", "<=", "!". Look familiar? </span>
 
 ```{r, eval=FALSE}
 which(data$sightings > 500) # what does this tell you? try ?which
@@ -231,15 +239,16 @@ newdata <- data[which(data$sightings > 100),]
 
 # Challenge #1
 
-- What is the year of the first sighting?
-- Which year had the most sightings?
-- which month(s) had less than 5?
+- <span style="color:dodgerblue; font-weight:bold"> What is the year of the first sighting? </span>
+- <span style="color:orange; font-weight:bold"> Which year had the most sightings?</span>
+- <span style="color:lightgreen; font-weight:bold"> which month(s) had less than 5?</span>
 
 ---
 
 # Excel Challenge
 
-- Construct a data table that summarises the number of sightings greater than 100 between the 
+- <span style="color:lightgreen; font-weight:bold"> Construct a data table that summarises the average number of sightings for each year and remove all those that contain 1 </span>
+- plot it if you feel the desire
 
 
 
@@ -247,7 +256,8 @@ newdata <- data[which(data$sightings > 100),]
 
 ### dplyr - the mother of data analysis packages
 
-**dplyr** is build off of a base R package that provides convenient and powerful tools for wranging data into the format you desire. It uses natural "verbs" and piping operators to keep things fast and efficient. What does that mean?
+- **dplyr** is build off of a base R package that provides convenient and powerful tools for wranging data into the format you desire. 
+- It uses natural "verbs" and piping operators to keep things fast and efficient. What does that mean?
 ```{r, eval=FALSE}
 install.packages("dplyr")
 ```
@@ -256,17 +266,19 @@ library(plyr) # base package must be loaded first
 library(dplyr)
 ```
 
-- select() - select the variables (columns) of the data you are interested in.
-- filter() - filter the rows of the data.frame utilising your logical operators >,<,>=,<=, and == according to the data of interest.
-- group_by() - group the data according to some category, for instance, group all data by continent.
-- summarise() - Summarise multiple values to a single value. For example, the mean GDP or total GDP of each continent, where the continent group was created using the function group_by().
-- mutate() - mutate or transform one variable into another using some function. For example, create a new variable (column) that is a combination of two other variables (population and GDP).
+---
+
+- <span style="color:dodgerblue; font-weight:bold"> select()</span> - select the variables (columns) of the data you are interested in.
+- <span style="color:dodgerblue; font-weight:bold"> filter() </span>- filter the rows of the data.frame utilising your logical operators >,<,>=,<=, and == according to the data of interest.
+- <span style="color:dodgerblue; font-weight:bold"> group_by()</span> - group the data according to some category, for instance, group all data by continent.
+- <span style="color:dodgerblue; font-weight:bold"> summarise()</span> - Summarise multiple values to a single value. For example, the mean GDP or total GDP of each continent, where the continent group was created using the function group_by().
+- <span style="color:dodgerblue; font-weight:bold"> mutate()</span> - mutate or transform one variable into another using some function. For example, create a new variable (column) that is a combination of two other variables (population and GDP).
 
 ---
 
 # Let's give them a try
 
-The dplyr piping operator is "%>%", which you can think of as "and then". Let me show you:
+- The dplyr piping operator is <span style="color:lightgreen; font-weight:bold">%>%</span>, which you can think of as "and then". Let me show you:
 
 - select the year and sightings columns "and then" group the data according to the year "and then" summarise each year by the mean sightings.
 
@@ -284,13 +296,13 @@ data.update <- data.new %>%
 	filter(mean.sightings != 1)
 ```
 
-- How about by month?
+- <span style="color:orange; font-weight:bold">How about by month?</span>
 
 ---
 
 ## Visualisation
 
-R has base plots:
+<span style="color:dodgerblue; font-weight:bold">R has base plots:</span>
 ```{r, eval=FALSE}
 plot(mean.sightings ~ year, data.update)
 ```
@@ -301,8 +313,8 @@ plot(mean.sightings ~ year, data.update)
 
 # Quick Challenge
 
-- What is the year in which sightings erupt?
-- Is there a month where sightings are more prominent?
+- <span style="color:lightgreen; font-weight:bold">What is the year in which sightings erupt?</span>
+- <span style="color:dodgerblue; font-weight:bold">Is there a month where sightings are more prominent? </span>
 
 ---
 
@@ -310,7 +322,7 @@ plot(mean.sightings ~ year, data.update)
 
 ---
 
-# ggplot2 :)
+# <span style="color:red; font-weight:bold">ggplot2 :)</span>
 
 ```{r, eval=FALSE}
 install.packages("ggplot2")
@@ -328,7 +340,7 @@ install.packages("ggplot2")
 
 # How ggplot2 works
 
-### myPlot <- ggplot(data.frame, aes(x, y, ...)) + ?
+### <span style="color:dodgerblue; font-weight:bold">myPlot <- ggplot(data.frame, aes(x, y, ...)) + ? </span>
 
 - I call my plot **myPlot** (now it's an object :) )
 - I place my data.frame in
@@ -344,7 +356,7 @@ library(ggplot2)
 myPlot <- ggplot(data.update, aes(x = year, y = mean.sightings)) + geom_line(colour = "blue")
 ```
 
-- But I want to add more! Then let's just add properties to the object!
+- <span style="color:lightgreen; font-weight:bold"> But I want to add more! Then let's just add properties to the object!</span>
 
 ```{r, eval=FALSE}
 myPlot2 <- myPlot + 
@@ -361,8 +373,8 @@ myPlot2 <- myPlot +
 
 ## Can you do better?
 
-- check the resources for ggplot2 to learn the types of plots and its capabilities.
-- there are many other types of visualisations you can handle with ggplot
+- <span style="color:dodgerblue; font-weight:bold">check the resources for ggplot2 to learn the types of plots and its capabilities.</span>
+- <span style="color:orange; font-weight:bold">there are many other types of visualisations you can handle with ggplot</span>
 
 ---
 
@@ -370,7 +382,8 @@ myPlot2 <- myPlot +
 
 - Download the .tsv into your working directory
 - Read in gapminder
-```{r}
+
+```{r, eval=FALSE}
 gapminder <- read.delim("Workshops/Data_Analysis_Intro/Data/gapminder.tsv")
 ```
 
@@ -409,3 +422,42 @@ print(p1)
 - get into groups and take 20 minutes to find something interesting in the gapminder data.
 - use dplyr to investigate and wrangle the data, then use a visualisation technique with ggplot
 - remember to check the cheetsheets and resources on the workshop site
+
+---
+
+# Let's get BIGGER!
+
+Grab these data sets and do the same routine.
+
+1. [Aquistions.csv](https://github.com/Dustin21/Dustin21.github.io/raw/master/Workshops/Data_Analysis_Intro/Data/CrunchBase/Aquisitions.csv)
+2. [Companies.csv](https://github.com/Dustin21/Dustin21.github.io/raw/master/Workshops/Data_Analysis_Intro/Data/CrunchBase/Companies.csv)
+3. [Investment.csv](https://github.com/Dustin21/Dustin21.github.io/raw/master/Workshops/Data_Analysis_Intro/Data/CrunchBase/Investment.csv)
+4. [Rounds.csv](https://github.com/Dustin21/Dustin21.github.io/raw/master/Workshops/Data_Analysis_Intro/Data/CrunchBase/Rounds.csv)
+
+---
+
+### What is this Data?
+
+- Dataset of record for the startup and venture capital communities. It can provide information on anything from what industries are hot (biotech) to the potential effects of founder experience or age. 
+- The dataset includes funding, investment, and acquisition data on over 40,000 companies.
+- What kinds of questions can you ask? 
+	- Are there characteristics of a company—industry, location, etc. that differ by VC? 
+	- Do some VCs typically invest together, while others rarely do so? 
+	- Are companies raising more money earlier? 
+	- ARE WE IN A BUBBLE??
+		
+source: http://blog.modeanalytics.com/five-public-dataset/
+
+--- 
+
+# Task
+
+- This data is not pre-cleaned ==> <span style="color:red; font-weight:bold">NA</span> values!
+- These data sets can be combined with dplyr join functions!
+	- <span style="color:dodgerblue; font-weight:bold">inner_join</span>
+	- <span style="color:dodgerblue; font-weight:bold">left_join()</span>
+	- <span style="color:dodgerblue; font-weight:bold">semi_join()</span>
+	- <span style="color:dodgerblue; font-weight:bold">anti_join()</span>
+	- <span style="color:dodgerblue; font-weight:bold">merge()</span> (technically plyr)
+- group up and find something unique. What you find may be unknown as of now in the VC industry!
+

@@ -12,16 +12,18 @@ Get all your resources and material here for the Data Analysis Workshop!
 
 ## Slides
 - [Primer](https://htmlpreview.github.io/?https://github.com/Dustin21/Dustin21.github.io/blob/master/Workshops/Data_Analysis_Intro/index.html#/slide-1)
-- [Signal Processing]
+- [Signal Processing](https://github.com/Dustin21/Dustin21.github.io/raw/master/Workshops/Data_Analysis_Intro/haihan_updated_v2.pdf)
 - [Interactive Plots]
 
 ## Data
 1. [Sightings.csv](https://github.com/Dustin21/Dustin21.github.io/raw/master/Workshops/Data_Analysis_Intro/Data/Sightings.csv)
 2. [Gapminder.csv](https://github.com/Dustin21/Dustin21.github.io/raw/master/Workshops/Data_Analysis_Intro/Data/gapminder.tsv)
 3. [Aquistions.csv](https://github.com/Dustin21/Dustin21.github.io/raw/master/Workshops/Data_Analysis_Intro/Data/CrunchBase/Aquisitions.csv)
+4. [Companies.csv](https://github.com/Dustin21/Dustin21.github.io/raw/master/Workshops/Data_Analysis_Intro/Data/CrunchBase/Companies.csv)
 4. [Investment.csv](https://github.com/Dustin21/Dustin21.github.io/raw/master/Workshops/Data_Analysis_Intro/Data/CrunchBase/Investment.csv)
 5. [Rounds.csv](https://github.com/Dustin21/Dustin21.github.io/raw/master/Workshops/Data_Analysis_Intro/Data/CrunchBase/Rounds.csv)
 
 # Resources
 - [ggplot2](http://www.cookbook-r.com/) - great for all your ggplot functions and visualisation types
-- [dplyr](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html) - forget what the verbs do or how to handle more complexity? Check this out!
+- [dplyr](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html) - covers some great examples
+- [dplyr function cheetsheet](https://stat545-ubc.github.io/bit001_dplyr-cheatsheet.html) - forget what the verbs do or how to handle more complexity? Check this out! **Also, joins and merges**

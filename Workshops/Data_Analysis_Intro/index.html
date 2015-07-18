@@ -34,18 +34,20 @@
   <p><span style="color:dodgerblue; font-weight:bold"> Data itself has no meaning. It&#39;s what we can extract from it that gives it meaning. This requires analysing the data. </span></p>
 
 <p><BR>
+<span style="color:orange; font-weight:bold">
 That being said, personal bias and deceit can always play a role, which is another reason to learn to understand where the results came from!
+</span>
 </BR></p>
 
 </section>
 <section class='' data-state='' id='slide-3'>
   
-  <p><img src="correlation.png" alt="img"></p>
+  <p><img src="Correlation.png" alt="img"></p>
 
 </section>
 <section class='' data-state='' id='slide-4'>
   
-  <p><img src="correlation_fin.png" alt="img2"></p>
+  <p><img src="Correlation_fin.png" alt="img2"></p>
 
 </section>
 <section class='' data-state='' id='slide-5'>
@@ -66,7 +68,7 @@ That being said, personal bias and deceit can always play a role, which is anoth
 </section>
 <section class='' data-state='' id='slide-6'>
   <h2>... with Arnold quotes!</h2>
-  <p><img src="arnoldC.png" alt="arnoldC"></p>
+  <p><img src="ArnoldC.png" alt="arnoldC"></p>
 
 </section>
 <section class='' data-state='' id='slide-7'>
@@ -83,7 +85,7 @@ That being said, personal bias and deceit can always play a role, which is anoth
 
 </section>
 <section class='' data-state='' id='slide-8'>
-  <h1>Let&#39;s set up!</h1>
+  <h1><span style="color:red; font-weight:bold">Let&#39;s set up!</span></h1>
   
 </section>
 <section class='' data-state='' id='slide-9'>
@@ -110,17 +112,17 @@ My.Object
 </section>
 <section class='' data-state='' id='slide-10'>
   <h1>Functions</h1>
-  <p>R has many build-in functions that perform tasks for you, saving you the work of programming them yourself.</p>
-
-<p>Examples of functions are:</p>
+  <ul>
+<li><p>R has many build-in functions that perform tasks for you, saving you the work of programming them yourself.</p></li>
+<li><p>Examples of functions are:</p>
 
 <ul>
-<li><code>date()</code></li>
-<li><code>data()</code></li>
-<li><code>is.numeric()</code></li>
+<li><span style="color:dodgerblue; font-weight:bold">date()</span></li>
+<li><span style="color:dodgerblue; font-weight:bold">data()</span></li>
+<li><span style="color:dodgerblue; font-weight:bold">is.numeric()</span></li>
+</ul></li>
+<li><p>Many functions are available within packages, which R keeps in a its library. We can easily check what we have with the function <code>library()</code>. For special (most) packages, we must download them from a magical place called Cran.</p></li>
 </ul>
-
-<p>Many functions are available within packages, which R keeps in a its library. We can easily check what we have with the function <code>library()</code>. For special (most) packages, we must download them from a magical place called Cran.</p>
 
 </section>
 <section class='' data-state='' id='slide-11'>
@@ -145,7 +147,11 @@ library(quantmod) # load the package in this R session
 </section>
 <section class='' data-state='' id='slide-12'>
   <h3>What are the functions!? I need help!</h3>
-  <p>Firstly, Cran has all the tutorials you need online in a pdf format for each function. If thats not enough, Stack Overflow is a great great resource of fellow programmers. If you have a question, I can almost guarantee you&#39;ll find it there. More simply, we can do the following (assuming we know the function):</p>
+  <ul>
+<li>Firstly, Cran has all the tutorials you need online in a pdf format for each function. </li>
+<li>If thats not enough, Stack Overflow is a great great resource of fellow programmers. If you have a question, I can almost guarantee you&#39;ll find it there. </li>
+<li>More simply, we can do the following (assuming we know the function):</li>
+</ul>
 
 <pre><code class="r">?getSymbols
 ?matrix
@@ -159,27 +165,27 @@ library(quantmod) # load the package in this R session
 <li>numeric, integer, string: 
 
 <ul>
-<li>x &lt;- 5.09, y &lt;- 2, z &lt;- &quot;cool&quot;</li>
+<li><span style="color:dodgerblue; font-weight:bold">x &lt;- 5.09, y &lt;- 2, z &lt;- &quot;cool&quot;</span></li>
 </ul></li>
 <li>vectors: 
 
 <ul>
-<li>vec &lt;- c(2, 5 , 9)</li>
+<li><span style="color:dodgerblue; font-weight:bold">vec &lt;- c(2, 5 , 9)</span></li>
 </ul></li>
 <li>matrices: 
 
 <ul>
-<li>mat &lt;- matrix(c(1,2,3,7,7,8), nrow = 2)</li>
+<li><span style="color:dodgerblue; font-weight:bold">mat &lt;- matrix(c(1,2,3,7,7,8), nrow = 2)</li>
 </ul></li>
 <li>data.frames: 
 
 <ul>
-<li>df &lt;- data.frame(hello = rep(&quot;hello&quot;, 4), int = seq(1, 4, by = 1), num = rnorm(4))</li>
+<li><span style="color:dodgerblue; font-weight:bold">df &lt;- data.frame(hello = rep(&quot;hello&quot;, 4), int = seq(1, 4, by = 1), num = rnorm(4))</span></li>
 </ul></li>
 <li>lists:
 
 <ul>
-<li>mylist &lt;- list(mat, df, vec)</li>
+<li><span style="color:dodgerblue; font-weight:bold">mylist &lt;- list(mat, df, vec)</span></li>
 </ul></li>
 </ul>
 
@@ -201,7 +207,7 @@ library(quantmod) # load the package in this R session
 </section>
 <section class='' data-state='' id='slide-16'>
   <h1>Reading data</h1>
-  <p>Download the Sightings.csv from the website and save it into your working directory. The working directory is where R sees your files.</p>
+  <p>Download the <span style="color:lightgreen; font-weight:bold">Sightings.csv</span> from the website and save it into your working directory. The working directory is where R sees your files.</p>
 
 <pre><code class="r">getwd() # check where R is looking for your files (and if Sightings.csv is there)
 
@@ -213,23 +219,26 @@ head(data) # avoid seeing all the data at once
 </section>
 <section class='' data-state='' id='slide-17'>
   <h1>Examining the data</h1>
-  <p>Data is messy and usually contains way too much information to see with the naked eye. Luckily, R has built in functions that make this more of a human task:</p>
-
-<ul>
-<li>str(data)</li>
-<li>head(data); tail(data)</li>
-<li>dim(data)</li>
-<li>is.data.frame()</li>
+  <ul>
+<li><p>Data is messy and usually contains way too much information to see with the naked eye. Luckily, R has built in functions that make this more of a human task:</p></li>
+<li><p><span style="color:dodgerblue; font-weight:bold">str(data)</span></p></li>
+<li><p><span style="color:dodgerblue; font-weight:bold">head(data); tail(data)</span></p></li>
+<li><p><span style="color:dodgerblue; font-weight:bold">dim(data)</span></p></li>
+<li><p><span style="color:dodgerblue; font-weight:bold">is.data.frame()</span></p></li>
 </ul>
 
 <p><BR>
-What do these functions tell you abou the data? So long Excel!
+<span style="color:lightgreen; font-weight:bold">
+What do these functions tell you abou the data? So long, Excel!
+</span>
 </BR></p>
 
 </section>
 <section class='' data-state='' id='slide-18'>
   <h1>Disseminating the Data</h1>
-  <p>We can pull what we need from the data using simple operators:</p>
+  <ul>
+<li>We can pull what we need from the data using simple operators:</li>
+</ul>
 
 <pre><code class="r">sightings &lt;- data$sightings # gives us the column (vector) called sightings
 
@@ -240,13 +249,13 @@ obs &lt;- data[dim(data)[1], 1] # what does this do?
 obs2 &lt;- max(data$sightings) # or max(sightings) as we alread made the sightings object
 </code></pre>
 
-<p>Functions within functions are possible! Remember &quot;?function_name&quot; to learn about the funtion.</p>
+<p><span style="color:orange; font-weight:bold"> Functions within functions are possible! Remember &quot;?function_name&quot; to learn about the funtion.</span></p>
 
 </section>
 <section class='' data-state='' id='slide-19'>
   <h1>Logical Operators</h1>
   <ul>
-<li>Logical operators consist of &quot;&gt;&quot;, &quot;&lt;&quot;, &quot;==&quot;, &quot;&gt;=&quot;, &quot;&lt;=&quot;, &quot;!&quot;. Look familiar?</li>
+<li><span style="color:dodgerblue; font-weight:bold"> Logical operators consist of &quot;&gt;&quot;, &quot;&lt;&quot;, &quot;==&quot;, &quot;&gt;=&quot;, &quot;&lt;=&quot;, &quot;!&quot;. Look familiar? </span></li>
 </ul>
 
 <pre><code class="r">which(data$sightings &gt; 500) # what does this tell you? try ?which
@@ -262,22 +271,26 @@ newdata &lt;- data[which(data$sightings &gt; 100),]
 <section class='' data-state='' id='slide-20'>
   <h1>Challenge #1</h1>
   <ul>
-<li>What is the year of the first sighting?</li>
-<li>Which year had the most sightings?</li>
-<li>which month(s) had less than 5?</li>
+<li><span style="color:dodgerblue; font-weight:bold"> What is the year of the first sighting? </span></li>
+<li><span style="color:orange; font-weight:bold"> Which year had the most sightings?</span></li>
+<li><span style="color:lightgreen; font-weight:bold"> which month(s) had less than 5?</span></li>
 </ul>
 
 </section>
 <section class='' data-state='' id='slide-21'>
   <h1>Excel Challenge</h1>
   <ul>
-<li>Construct a data table that summarises the number of sightings greater than 100 between the </li>
+<li><span style="color:lightgreen; font-weight:bold"> Construct a data table that summarises the average number of sightings for each year and remove all those that contain 1 </span></li>
+<li>plot it if you feel the desire</li>
 </ul>
 
 </section>
 <section class='' data-state='' id='slide-22'>
   <h3>dplyr - the mother of data analysis packages</h3>
-  <p><strong>dplyr</strong> is build off of a base R package that provides convenient and powerful tools for wranging data into the format you desire. It uses natural &quot;verbs&quot; and piping operators to keep things fast and efficient. What does that mean?</p>
+  <ul>
+<li><strong>dplyr</strong> is build off of a base R package that provides convenient and powerful tools for wranging data into the format you desire. </li>
+<li>It uses natural &quot;verbs&quot; and piping operators to keep things fast and efficient. What does that mean?</li>
+</ul>
 
 <pre><code class="r">install.packages(&quot;dplyr&quot;)
 </code></pre>
@@ -286,21 +299,23 @@ newdata &lt;- data[which(data$sightings &gt; 100),]
 library(dplyr)
 </code></pre>
 
-<ul>
-<li>select() - select the variables (columns) of the data you are interested in.</li>
-<li>filter() - filter the rows of the data.frame utilising your logical operators &gt;,&lt;,&gt;=,&lt;=, and == according to the data of interest.</li>
-<li>group_by() - group the data according to some category, for instance, group all data by continent.</li>
-<li>summarise() - Summarise multiple values to a single value. For example, the mean GDP or total GDP of each continent, where the continent group was created using the function group_by().</li>
-<li>mutate() - mutate or transform one variable into another using some function. For example, create a new variable (column) that is a combination of two other variables (population and GDP).</li>
+</section>
+<section class='' data-state='' id='slide-23'>
+  
+  <ul>
+<li><span style="color:dodgerblue; font-weight:bold"> select()</span> - select the variables (columns) of the data you are interested in.</li>
+<li><span style="color:dodgerblue; font-weight:bold"> filter() </span>- filter the rows of the data.frame utilising your logical operators &gt;,&lt;,&gt;=,&lt;=, and == according to the data of interest.</li>
+<li><span style="color:dodgerblue; font-weight:bold"> group_by()</span> - group the data according to some category, for instance, group all data by continent.</li>
+<li><span style="color:dodgerblue; font-weight:bold"> summarise()</span> - Summarise multiple values to a single value. For example, the mean GDP or total GDP of each continent, where the continent group was created using the function group_by().</li>
+<li><span style="color:dodgerblue; font-weight:bold"> mutate()</span> - mutate or transform one variable into another using some function. For example, create a new variable (column) that is a combination of two other variables (population and GDP).</li>
 </ul>
 
 </section>
-<section class='' data-state='' id='slide-23'>
+<section class='' data-state='' id='slide-24'>
   <h1>Let&#39;s give them a try</h1>
-  <p>The dplyr piping operator is &quot;%&gt;%&quot;, which you can think of as &quot;and then&quot;. Let me show you:</p>
-
-<ul>
-<li>select the year and sightings columns &quot;and then&quot; group the data according to the year &quot;and then&quot; summarise each year by the mean sightings.</li>
+  <ul>
+<li><p>The dplyr piping operator is <span style="color:lightgreen; font-weight:bold">%&gt;%</span>, which you can think of as &quot;and then&quot;. Let me show you:</p></li>
+<li><p>select the year and sightings columns &quot;and then&quot; group the data according to the year &quot;and then&quot; summarise each year by the mean sightings.</p></li>
 </ul>
 
 <pre><code class="r">data.new &lt;- data %&gt;%   # specify data you are using &quot;and then&quot;
@@ -318,13 +333,13 @@ library(dplyr)
 </code></pre>
 
 <ul>
-<li>How about by month?</li>
+<li><span style="color:orange; font-weight:bold">How about by month?</span></li>
 </ul>
 
 </section>
-<section class='' data-state='' id='slide-24'>
+<section class='' data-state='' id='slide-25'>
   <h2>Visualisation</h2>
-  <p>R has base plots:</p>
+  <p><span style="color:dodgerblue; font-weight:bold">R has base plots:</span></p>
 
 <pre><code class="r">plot(mean.sightings ~ year, data.update)
 </code></pre>
@@ -332,25 +347,25 @@ library(dplyr)
 <p><img src="basicRplot.png" alt="sightingsPlot"></p>
 
 </section>
-<section class='' data-state='' id='slide-25'>
+<section class='' data-state='' id='slide-26'>
   <h1>Quick Challenge</h1>
   <ul>
-<li>What is the year in which sightings erupt?</li>
-<li>Is there a month where sightings are more prominent?</li>
+<li><span style="color:lightgreen; font-weight:bold">What is the year in which sightings erupt?</span></li>
+<li><span style="color:dodgerblue; font-weight:bold">Is there a month where sightings are more prominent? </span></li>
 </ul>
 
 </section>
-<section class='' data-state='' id='slide-26'>
+<section class='' data-state='' id='slide-27'>
   <h2>This is awkward... the plot is ugly...</h2>
   
 </section>
-<section class='' data-state='' id='slide-27'>
-  <h1>ggplot2 :)</h1>
+<section class='' data-state='' id='slide-28'>
+  <h1><span style="color:red; font-weight:bold">ggplot2 :)</span></h1>
   <pre><code class="r">install.packages(&quot;ggplot2&quot;)
 </code></pre>
 
 </section>
-<section class='' data-state='' id='slide-28'>
+<section class='' data-state='' id='slide-29'>
   <h1>ggplot2</h1>
   <ul>
 <li>R&#39;s plots don&#39;t follow the object orientation! I can&#39;t save them for later.</li>
@@ -359,9 +374,9 @@ library(dplyr)
 </ul>
 
 </section>
-<section class='' data-state='' id='slide-29'>
+<section class='' data-state='' id='slide-30'>
   <h1>How ggplot2 works</h1>
-  <h3>myPlot &lt;- ggplot(data.frame, aes(x, y, ...)) + ?</h3>
+  <h3><span style="color:dodgerblue; font-weight:bold">myPlot &lt;- ggplot(data.frame, aes(x, y, ...)) + ? </span></h3>
 
 <ul>
 <li>I call my plot <strong>myPlot</strong> (now it&#39;s an object :) )</li>
@@ -371,14 +386,14 @@ library(dplyr)
 </ul>
 
 </section>
-<section class='' data-state='' id='slide-30'>
+<section class='' data-state='' id='slide-31'>
   <h1>Example</h1>
   <pre><code class="r">library(ggplot2)
 myPlot &lt;- ggplot(data.update, aes(x = year, y = mean.sightings)) + geom_line(colour = &quot;blue&quot;)
 </code></pre>
 
 <ul>
-<li>But I want to add more! Then let&#39;s just add properties to the object!</li>
+<li><span style="color:lightgreen; font-weight:bold"> But I want to add more! Then let&#39;s just add properties to the object!</span></li>
 </ul>
 
 <pre><code class="r">myPlot2 &lt;- myPlot + 
@@ -388,20 +403,20 @@ myPlot &lt;- ggplot(data.update, aes(x = year, y = mean.sightings)) + geom_line(
 </code></pre>
 
 </section>
-<section class='' data-state='' id='slide-31'>
+<section class='' data-state='' id='slide-32'>
   
   <p><img src="Sightings_year.png" alt="plot2"></p>
 
 </section>
-<section class='' data-state='' id='slide-32'>
+<section class='' data-state='' id='slide-33'>
   <h2>Can you do better?</h2>
   <ul>
-<li>check the resources for ggplot2 to learn the types of plots and its capabilities.</li>
-<li>there are many other types of visualisations you can handle with ggplot</li>
+<li><span style="color:dodgerblue; font-weight:bold">check the resources for ggplot2 to learn the types of plots and its capabilities.</span></li>
+<li><span style="color:orange; font-weight:bold">there are many other types of visualisations you can handle with ggplot</span></li>
 </ul>
 
 </section>
-<section class='' data-state='' id='slide-33'>
+<section class='' data-state='' id='slide-34'>
   <h1>A more flavourful data set - Gapminder</h1>
   <ul>
 <li>Download the .tsv into your working directory</li>
@@ -411,21 +426,13 @@ myPlot &lt;- ggplot(data.update, aes(x = year, y = mean.sightings)) + geom_line(
 <pre><code class="r">gapminder &lt;- read.delim(&quot;Workshops/Data_Analysis_Intro/Data/gapminder.tsv&quot;)
 </code></pre>
 
-<pre><code>## Warning in file(file, &quot;rt&quot;): cannot open file
-## &#39;Workshops/Data_Analysis_Intro/Data/gapminder.tsv&#39;: No such file or
-## directory
-</code></pre>
-
-<pre><code>## Error in file(file, &quot;rt&quot;): cannot open the connection
-</code></pre>
-
 <ul>
 <li>why read.delim? What is a .tsv vs .csv?</li>
 <li>Examine the data using the functions you used previously</li>
 </ul>
 
 </section>
-<section class='' data-state='' id='slide-34'>
+<section class='' data-state='' id='slide-35'>
   <h1>Example</h1>
   <pre><code class="r"># dplyr wrangling
 gDat &lt;- gapminder %&gt;%
@@ -444,17 +451,64 @@ print(p1)
 </code></pre>
 
 </section>
-<section class='' data-state='' id='slide-35'>
+<section class='' data-state='' id='slide-36'>
   
   <p><img src="pop_dist.png" alt="plot3"></p>
 
 </section>
-<section class='' data-state='' id='slide-36'>
+<section class='' data-state='' id='slide-37'>
   <h1>Your turn!</h1>
   <ul>
 <li>get into groups and take 20 minutes to find something interesting in the gapminder data.</li>
 <li>use dplyr to investigate and wrangle the data, then use a visualisation technique with ggplot</li>
 <li>remember to check the cheetsheets and resources on the workshop site</li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-38'>
+  <h1>Let&#39;s get BIGGER!</h1>
+  <p>Grab these data sets and do the same routine.</p>
+
+<ol>
+<li><a href="https://github.com/Dustin21/Dustin21.github.io/raw/master/Workshops/Data_Analysis_Intro/Data/CrunchBase/Aquisitions.csv">Aquistions.csv</a></li>
+<li><a href="https://github.com/Dustin21/Dustin21.github.io/raw/master/Workshops/Data_Analysis_Intro/Data/CrunchBase/Companies.csv">Companies.csv</a></li>
+<li><a href="https://github.com/Dustin21/Dustin21.github.io/raw/master/Workshops/Data_Analysis_Intro/Data/CrunchBase/Investment.csv">Investment.csv</a></li>
+<li><a href="https://github.com/Dustin21/Dustin21.github.io/raw/master/Workshops/Data_Analysis_Intro/Data/CrunchBase/Rounds.csv">Rounds.csv</a></li>
+</ol>
+
+</section>
+<section class='' data-state='' id='slide-39'>
+  <h3>What is this Data?</h3>
+  <ul>
+<li>Dataset of record for the startup and venture capital communities. It can provide information on anything from what industries are hot (biotech) to the potential effects of founder experience or age. </li>
+<li>The dataset includes funding, investment, and acquisition data on over 40,000 companies.</li>
+<li>What kinds of questions can you ask? 
+
+<ul>
+<li>Are there characteristics of a company—industry, location, etc. that differ by VC? </li>
+<li>Do some VCs typically invest together, while others rarely do so? </li>
+<li>Are companies raising more money earlier? </li>
+<li>ARE WE IN A BUBBLE??</li>
+</ul></li>
+</ul>
+
+<p>source: <a href="http://blog.modeanalytics.com/five-public-dataset/">http://blog.modeanalytics.com/five-public-dataset/</a></p>
+
+</section>
+<section class='' data-state='' id='slide-40'>
+  <h1>Task</h1>
+  <ul>
+<li>This data is not pre-cleaned ==&gt; <span style="color:red; font-weight:bold">NA</span> values!</li>
+<li>These data sets can be combined with dplyr join functions!
+
+<ul>
+<li><span style="color:dodgerblue; font-weight:bold">inner_join</span></li>
+<li><span style="color:dodgerblue; font-weight:bold">left_join()</span></li>
+<li><span style="color:dodgerblue; font-weight:bold">semi_join()</span></li>
+<li><span style="color:dodgerblue; font-weight:bold">anti_join()</span></li>
+<li><span style="color:dodgerblue; font-weight:bold">merge()</span> (technically plyr)</li>
+</ul></li>
+<li>group up and find something unique. What you find may be unknown as of now in the VC industry!</li>
 </ul>
 
 </section>
