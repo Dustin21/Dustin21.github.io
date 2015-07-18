@@ -8,3 +8,15 @@ output:
 
 Get all your resources and material here for the Data Analysis Workshop!
 
+<object data="http://www.youtube.com/embed/assignedId"> </object>
+
+## Data
+1. Sightings.csv
+2. Gapminder.csv
+3. Aquistions.csv
+4. Investment.csv
+5. Rounds.csv
+
+# Resources
+- [ggplot2](http://www.cookbook-r.com/)
+- [dplyr](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html)
