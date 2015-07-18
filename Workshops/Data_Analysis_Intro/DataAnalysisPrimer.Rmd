@@ -8,7 +8,12 @@ output:
 
 Get all your resources and material here for the Data Analysis Workshop!
 
-<object type="https://github.com/Dustin21/Dustin21.github.io/blob/master/Workshops/Data_Analysis_Intro/index.html"> </object>
+<iframe name="FRAME2" src="https://htmlpreview.github.io/?https://github.com/Dustin21/Dustin21.github.io/blob/master/Workshops/Data_Analysis_Intro/index.html#/slide-1" frameborder="1" width="450" height="400"></iframe>
+
+## Slides
+- [Primer](https://htmlpreview.github.io/?https://github.com/Dustin21/Dustin21.github.io/blob/master/Workshops/Data_Analysis_Intro/index.html#/slide-1)
+- [Signal Processing]
+- [Interactive Plots]
 
 ## Data
 1. [Sightings.csv](https://github.com/Dustin21/Dustin21.github.io/raw/master/Workshops/Data_Analysis_Intro/Data/Sightings.csv)
@@ -18,5 +23,5 @@ Get all your resources and material here for the Data Analysis Workshop!
 5. [Rounds.csv](https://github.com/Dustin21/Dustin21.github.io/raw/master/Workshops/Data_Analysis_Intro/Data/CrunchBase/Rounds.csv)
 
 # Resources
-- [ggplot2](http://www.cookbook-r.com/)
-- [dplyr](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html)
+- [ggplot2](http://www.cookbook-r.com/) - great for all your ggplot functions and visualisation types
+- [dplyr](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html) - forget what the verbs do or how to handle more complexity? Check this out!
