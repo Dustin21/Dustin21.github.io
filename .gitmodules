@@ -1,0 +1,3 @@
+[submodule "CourseMaterial"]
+	path = CourseMaterial
+	url = git@github.com:AQM-UBC/CourseMaterial.git
