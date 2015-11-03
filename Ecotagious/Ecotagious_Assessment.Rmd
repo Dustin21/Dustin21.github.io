@@ -2,7 +2,7 @@
 title: "Ecotagious Assessment"
 author: "Dustin Johnson"
 date: "November 2, 2015"
-output: html_document
+output: word_document
 ---
 
 ## Question 1
@@ -105,11 +105,11 @@ The `ON` clause, used in conjunction with some `AND` criterion, will dictate whi
 ## Question 3 
 <font color="blue">_What was the most interesting analytics project you have worked on? What made it interesting and what made it challenging?_</font>
 
-On of the most interesting analytics projects I have worked on was during a consulting engagement with a startup called Left of the Dot. I was required to explore a 200 Terabyte PostgreSQL database of spatio-temporal data using both unupervised and supervised learning approaches. Along with a fellow data scientist, I developed large scale clustering, neural network, and Bayesian machine learning algorithms for the purpose of predicting web site conversion rates and Google keyword bids.
+On of the most interesting analytics projects I have worked on was during a consulting engagement with a start-up called Left of the Dot. I was required to explore a 200 Terabyte PostgreSQL database of spatio-temporal data using both unsupervised and supervised learning approaches. Along with a fellow data scientist, I developed large scale clustering, neural network, and Bayesian machine learning algorithms for the purpose of predicting web site conversion rates and Google keyword bids.
 
-The most fascinating aspect of the project was the question of how to model the many keywords that held no historical information (never been clicked). Should I ignore them, despite the possibility of them being clicked? If not, how should we bid? I decided to spatially map all keywords to specific longitudinal and latitudinal coordinates and use a distance criterion to cluster the unknowns, then I left out the keywords that didn't match. If a keyword led to a conversion, it was updated via a Baysian prior.
+The most fascinating aspect of the project was the question of how to model the many keywords that held no historical information (never been clicked). Should I ignore them, despite the possibility of them being clicked? If not, how should we bid? I decided to spatially map all keywords to specific longitudinal and latitudinal coordinates and use a distance criterion to cluster the unknowns, then I left out the keywords that didn't match. If a keyword led to a conversion, it was updated via a Bayesian prior.
 
-What made this project challenging was incorporating computational costs into the objective, so it came down to how to process the large data in an efficient way to ensure we did not overshoot our budget. We were attempting to run 500,000 simultaneous neural networks to relatively high dimensional data, which was not feasible, so we used approximation techniques through variable selection and grouping techniques. We wound up saving the company $40,000 a year with the method we developed. It was very challenging and fulfulling, but many unanswered questions still remain. 
+What made this project challenging was incorporating computational costs into the objective, so it came down to how to process the large data in an efficient way to ensure we did not overshoot our budget. We were attempting to run 500,000 simultaneous neural networks to relatively high dimensional data, which was not feasible, so we used approximation techniques through variable selection and grouping techniques. We wound up saving the company $40,000 a year with the method we developed. It was very challenging and fulfilling, but many unanswered questions still remain. 
 
 
 ## Question 4 
@@ -117,7 +117,7 @@ What made this project challenging was incorporating computational costs into th
 
 To be blatantly honest, I write my own statistical models with a combination of R, Python and C++, as I enjoy the flexibility and robustness. Relying on a platform has its limitations and sometimes I question their accuracy.
 
-That being said, I have utilised docker to host Apache Mahout on a Hadoop platform during my time consulting for Left of the Dot, as well as on my own cloud server. Mahout has approximately 28 statistical/machine learning algorithms/models ranging from Hidden Markov Classification Models to Reccomender Agents.
+That being said, I have utilised docker to host Apache Mahout on a Hadoop platform during my time consulting for Left of the Dot, as well as on my own cloud server. Mahout has approximately 28 statistical/machine learning algorithms/models ranging from Hidden Markov Classification Models to Recommender Agents.
 
 ## Question 5
 <font color="blue">_What does ETL stand for? What ETL tools have you used in your previous projects?_</font>
@@ -134,14 +134,14 @@ I do not have much experience with structuring an ETL process nor have I had the
 The following fundamental tools would be required to build a data processing platform (big data gets a bit messier):
 
 1. **Collection tools** - this could range from user input with cell phones and web sites to web scraping for information. 
-2. **Database** - with a wide range of data coming in from many angles, a database, or even multiple databases which would be fed to a data wharehouse would be required.
+2. **Database** - with a wide range of data coming in from many angles, a database, or even multiple databases which would be fed to a data warehouse would be required.
 3. **ETL tools** - As mentioned above, we need tools to actually process the data and facilitate the Extraction, transforming and loading of data.
 4. **Analytics tool** - With all the data in-place and ready-to-go, an analytical tool will be required to output and interpret the data and provide information that will guide future company policies. This would also entail report development and decision-making algorithms.
 
 My favourite tools corresponding to the list above are presented below:
 
 1. It's difficult to specify a collection tool, as it depends on the goal of the task. Typically, I would utilise some application or enable customer inputs and record them automatically into some database.
-2. PostgreSQL Database is my favourite database for the time being, mainly because I can use my own custom language (R or Python) inside the database. I also like the fact that it is open source, has flexible data types and encorporates many intuitive SQL functions not inherent in standard SQL.
+2. PostgreSQL Database is my favourite database for the time being, mainly because I can use my own custom language (R or Python) inside the database. I also like the fact that it is open source, has flexible data types and incorporates many intuitive SQL functions not inherent in standard SQL.
 3. The ETL tool I prefer is definitely the old-fashioned scripting. Otherwise, Talend is a nice open-source friend, mainly because its free and accessible for my learning objectives.
 4. I mentioned earlier that Mahout with Hadoop is a great analytics (and even full data processing platform when considered together). The ability to use MapReduce in conjunction with machine learning algorithms makes this platform attractive to me.
 5. **BONUS!** I am an extreme fan of docker to facilitate my data processing needs, as I can host images of all my platforms (from data bases to analytic platforms for big data with Hadoop, Hive and Mahout) already constructed to fit my needs and easily separate my applications from my infrastructure. It gives me full control and utilises little space in a cloud-based server. Better yet, it takes minutes to download these 'virtual' servers.
