@@ -1,0 +1,47 @@
+---
+output: 
+  html_document:
+    css: markdown5.css
+---
+
+# Dustin Johnson
+
+<br>
+
+<div id="holder">
+<div id="pic1"><img src="profile.jpg" /></div>
+<br><br>
+<div id="pic2"> > <font size=5px> _"Life is like a game of cards. The hand you are dealt is determinism; the way you play it is free will."_</font> <br><br> <font size=4px color='blue' align='center'>~ Jawaharlal Nehru</font></div>
+</div> 
+
+<br><br><br><br><br><br>
+
+## About me
+
+I live in Vancouver, Canada, where I'm currently a Researcher in the Department of Statistics and the Instructor of the Applied Quantitative Methods (AQM) program at the University of British Columbia, where I earned my degree in Finance and Statistics. 
+
+If you asked anyone who I was, they'd probably refer to me as the data guy - and for good reason! I am passionate about data science and machine learning and its applicationg to corporate decision making. My current research consists of high-dimensional functional approximation. My experience with statistical consulting and research in computational statistics has provided me with a robust set of skills in designing machine learning algorithms, leveraging high performance computing through parallel programming, and utilising 'big' data (>1TB).
+
+## Working Papers
+
+* _"A Sub-bagging Approach to Gaussian Process Models for Deterministic Outputs" (Supervised by William Welch)_
+* "A Benchmarking Comparison of MCMC and SMC Samplers" (with Jason Hartford)
+* "Benchmarking Performance of Julia and Python for MCMC" (with Jason Hartford)
+
+## Research Awards and Grants
+
+* National Science and Engineering Research Council (NSERC) of Canada Undergrad- uate Student Research Award (USRA) - Department of Statistics (2015)
+* Teaching and Learning Enhancement Fund (TLEF) for development of the Applied Quantitative Methods (AQM) program developed in 2014, $40,000 (pending)
+
+
+## Applied Quantitative Methods (AQM)
+
+For more information about the AQM program, please visit the following helpful links:
+
+* Like our [Facebook page](https://www.facebook.com/AppliedQuantitativeMethods)!
+* Our [program material](http://dustin21.github.io/CourseMaterial/AQM2015_LandingPage.html) is open source, so check it out!
+* public page pending
+
+
+
+
