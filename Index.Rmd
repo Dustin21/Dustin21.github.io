@@ -18,13 +18,13 @@ output:
 
 ## About me
 
-I live in Vancouver, Canada, where I'm currently a Researcher in the Department of Statistics and the Instructor of the Applied Quantitative Methods (AQM) program at the University of British Columbia, where I earned my degree in Finance and Statistics. 
+I live in Vancouver, Canada, where I'm currently a Researcher in the Department of Statistics and the program manager of the Applied Quantitative Methods (AQM) program at the University of British Columbia, where I earned my degree in Finance and Statistics. 
 
-If you asked anyone who I was, they'd probably refer to me as the data guy - and for good reason! I am passionate about data science and machine learning and its applications to corporate decision making. My current research consists of high-dimensional functional approximation. My experience with statistical consulting and research in computational statistics has provided me with a robust set of skills in designing machine learning algorithms, leveraging high performance computing through parallel programming, and utilising 'big' data (>1TB).
+If you asked anyone about me, they'd probably refer to me as the data guy - and for good reason! I am passionate about data science and machine learning and its applications to corporate decision making. My current research consists of high-dimensional functional approximation. My experience with statistical consulting and research in computational statistics has provided me with a robust set of skills in designing machine learning algorithms, leveraging high performance computing through parallel programming, and utilising 'big' data (>1TB).
 
 ## Working Papers
 
-* _"A Sub-bagging Approach to Gaussian Process Models for Deterministic Outputs" (Supervised by William Welch)_
+* "A Sub-bagging Approach to Gaussian Process Models for Deterministic Outputs" (Supervised by William Welch)
 * "A Benchmarking Comparison of MCMC and SMC Samplers" (with Jason Hartford)
 * "Benchmarking Performance of Julia and Python for MCMC" (with Jason Hartford)
 
