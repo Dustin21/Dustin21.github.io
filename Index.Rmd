@@ -20,7 +20,7 @@ output:
 
 I live in Vancouver, Canada, where I'm currently a Researcher in the Department of Statistics and the program manager of the Applied Quantitative Methods (AQM) program at the University of British Columbia, where I earned my degree in Finance and Statistics. 
 
-If you asked anyone about me, they'd probably refer to me as the data guy - and for good reason! I am passionate about data science and machine learning and its applications to corporate decision making. My current research consists of high-dimensional functional approximation. My experience with statistical consulting and research in computational statistics has provided me with a robust set of skills in designing machine learning algorithms, leveraging high performance computing through parallel programming, and utilising 'big' data (>1TB).
+If you asked anyone about me, they'd probably refer to me as the data guy - and for good reason! I am passionate about data science and machine learning and its applications to corporate decision making. My current research consists of high-dimensional functional approximation using Gaussian process ensembles. My experience with statistical consulting and research in computational statistics has provided me with a robust set of skills in designing machine learning algorithms, leveraging high performance computing through parallel programming, and utilising 'big' data (>1TB).
 
 ## Working Papers
 
@@ -31,7 +31,7 @@ If you asked anyone about me, they'd probably refer to me as the data guy - and 
 ## Research Awards and Grants
 
 * National Science and Engineering Research Council (NSERC) of Canada Undergraduate Student Research Award (USRA) - Department of Statistics (2015)
-* Teaching and Learning Enhancement Fund (TLEF) for development of the Applied Quantitative Methods (AQM) program developed in 2014, $40,000 (pending)
+* Teaching and Learning Enhancement Fund (TLEF) for development of the Applied Quantitative Methods (AQM) program developed in 2014, $25,000 (pending)
 
 
 ## Applied Quantitative Methods (AQM)
@@ -40,7 +40,13 @@ For more information about the AQM program, please visit the following helpful l
 
 * Like our [Facebook page](https://www.facebook.com/AppliedQuantitativeMethods)!
 * Our [program material](http://dustin21.github.io/CourseMaterial/AQM2015_LandingPage.html) is open source, so check it out!
-* public page pending
+* [public page pending]
+
+## Contact Me
+
+* Check me out on [LinkedIn](https://ca.linkedin.com/in/djohnson21),
+* Email me via [dustin.bwj@gmail.com](dustin.bwj@gmail.com), or
+* Visit my [Github repo](https://github.com/Dustin21) for some recent projects/hobbies of mine
 
 
 
